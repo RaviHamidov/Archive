@@ -8,7 +8,7 @@
   font-size: 1.6rem;
 }
 
-.sm:hover > svg path {
+.sm:hover>svg path {
   fill: white;
 
   transition: all ease 0.3s;
@@ -71,11 +71,13 @@ svg path {
 .footer__logo {
   width: 230px;
 }
+
 .footer__logo:hover h2 {
   color: #1a265c;
   transition: all ease 0.3s;
 }
-.footer__div1 > div {
+
+.footer__div1>div {
   margin-right: 8vw;
 }
 
@@ -88,20 +90,25 @@ svg path {
   background-position: center;
   background-image: url("/assets/images/AdnsuLogo-N.svg");
 }
+
 .nihad {
   background-position: center calc(100% - 20px) center calc(100% - 20px) !important;
 }
+
 .rounded-4xl {
   border-radius: 2rem;
 }
+
 .swiperTeachers {
   visibility: hidden;
   transition: all ease-in 0.5s;
 }
+
 .swiperTeachers.swipperActive {
   visibility: visible;
   transition: all ease-in 0.5s;
 }
+
 .muellimler-img {
   height: 34rem;
   width: 50.3rem;
