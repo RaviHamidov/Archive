@@ -15,3 +15,6 @@
 ## Please do not remove lines 17 - thanks! 🙂 ##
 #######################################################
 .DS_Store
+
+# to not wait years to git clone
+node_modules 
