@@ -154,6 +154,16 @@ svg path {
 
 /* BootStrap carousel indicators feature - from Ravi's */
 
+@media only screen and (max-width: 768px) {
+  .r-maximum {
+    width: 100%;
+  }
+}
+
+/* Section End */
+
+/* BootStrap carousel indicators feature - from Ravi's */
+
 .carousel-indicators button {
   width: 10px !important;
   height: 10px !important;
