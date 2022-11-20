@@ -1,5 +1,15 @@
+::-moz-selection {
+  /* Code for Firefox */
+  color: #3e5bdb;
+  background: #dfe3f6;
+}
+
+::selection {
+  color: #3e5bdb;
+  background: #dfe3f6;
+}
 /* Nihad's Part CSS start */
-.footer {
+/* .footer {
   background-color: #dfe3f6;
   font-size: 1.6rem;
 }
@@ -42,18 +52,10 @@ svg path {
   -o-transition: all ease 0.3s;
 }
 
-.footer__div {
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
 .footer__div2 {
   border-top: 1px solid #9ba3eb;
 }
 
-.footer__div1 {
-  padding: 6rem 0 6rem 0;
-}
 
 .footer__logo h2 {
   font-weight: 500;
@@ -102,7 +104,7 @@ svg path {
   height: 34rem;
   width: 50.3rem;
 }
-
+*/
 /* Section End */
 
 /* Murad's Part CSS start */
@@ -170,6 +172,11 @@ svg path {
   background: #f3f5fc;
   border-radius: 50%;
   border: 0 !important;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
 }
 
 .carousel-indicators .active {
@@ -178,6 +185,11 @@ svg path {
   background: #f3f5fc;
   border-radius: 15px;
   border: 0 !important;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
 }
 
 /* Section End */
