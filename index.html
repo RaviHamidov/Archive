@@ -2,576 +2,614 @@
 <html lang="en" style="font-size: 10px">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://unpkg.com/vanilla-counter"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vanilla-counter"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-  <!-- =========== Google Fonts CDN =========== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-    rel="stylesheet" />
+    <!-- =========== Google Fonts CDN =========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
 
-  <!-- =========== FontAwesome CDN =========== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =========== FontAwesome CDN =========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- =========== TailwindCss CDN =========== -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- =========== TailwindCss CDN =========== -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- =========== BootStrap CDN =========== -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- =========== BootStrap CDN =========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
-  <!-- =========== Main Css =========== -->
-  <link rel="stylesheet" href="./input.css" />
+    <!-- =========== Main Css =========== -->
+    <link rel="stylesheet" href="./input.css" />
 
-  <!-- =========== Page's Title =========== -->
-  <title>ASOIU</title>
+    <!-- =========== Page's Title =========== -->
+    <title>ASOIU</title>
 </head>
 
 <body>
-  <header>
-    <div id="carouselExampleCaptions"
-      class="w-full carousel slide relative z-0 flex justify-center bg-center bg-no-repeat bg-cover"
-      data-bs-ride="false">
-      <section class="container mx-auto flex justify-end absolute z-10 mt-6">
-        <ul class="flex font-normal text-xl leading-6 text-[#DFE3F6]">
-          <li class="ml-[2rem]"><a href="#">Haqqımızda</a></li>
-          <li class="ml-[2rem]"><a href="#">Müəllimlər</a></li>
-          <li class="ml-[2rem]"><a href="#">Ən çox verilən suallar</a></li>
-          <li class="ml-[2rem]"><a href="#">Təklifim var</a></li>
-          <li class="ml-[2rem]"><a href="#">Əlaqə</a></li>
-        </ul>
-      </section>
-      <nav class="container mx-auto flex justify-between items-center absolute z-10 mt-12">
-        <div>
-          <img src="./images/AdnsuNavMoonLogo.svg" alt="Your browser don't support this image" />
-        </div>
-        <div class="flex items-center">
-          <ul class="flex items-center font-medium text-3xl leading-7 text-white">
-            <li class="ml-[2rem] cursor-pointer">
-              <a href="#" class="pr-[0.75rem]">Xəbərlər</a>
-              <i class="fa-solid fa-chevron-down"></i>
-            </li>
-            <li class="ml-[2rem] cursor-pointer">
-              <a href="#" class="pr-[0.75rem]">Fakültələr</a>
-              <i class="fa-solid fa-chevron-down"></i>
-            </li>
-            <li class="ml-[2rem] cursor-pointer">
-              <a href="#" class="pr-[0.75rem]">Proqramlar</a>
-              <i class="fa-solid fa-chevron-down"></i>
-            </li>
-            <li class="ml-[2rem] cursor-pointer">
-              <a href="#" class="pr-[0.75rem]">Tələbələrlə bağlı</a>
-              <i class="fa-solid fa-chevron-down"></i>
-            </li>
-            <li class="ml-[2rem] cursor-pointer">
-              <a href="#" class="pr-[0.75rem]">Xidmətlər</a>
-              <i class="fa-solid fa-chevron-down"></i>
-            </li>
-            <li class="ml-[3rem]">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <header>
+        <div id="carouselExampleCaptions"
+            class="w-full carousel slide relative z-0 flex justify-center bg-center bg-no-repeat bg-cover"
+            data-bs-ride="false">
+            <section class="container mx-auto flex justify-end absolute z-10 mt-6">
+                <ul class="flex font-normal text-xl leading-6 text-[#DFE3F6]">
+                    <li class="ml-[2rem]"><a href="#">Haqqımızda</a></li>
+                    <li class="ml-[2rem]"><a href="#">Müəllimlər</a></li>
+                    <li class="ml-[2rem]"><a href="#">Ən çox verilən suallar</a></li>
+                    <li class="ml-[2rem]"><a href="#">Təklifim var</a></li>
+                    <li class="ml-[2rem]"><a href="#">Əlaqə</a></li>
+                </ul>
+            </section>
+            <nav class="container mx-auto flex justify-between items-center absolute z-10 mt-12">
+                <div>
+                    <img src="./images/AdnsuNavMoonLogo.svg" alt="Your browser don't support this image" />
+                </div>
+                <div class="flex items-center">
+                    <ul class="flex items-center font-medium text-3xl leading-7 text-white">
+                        <li class="ml-[2rem] cursor-pointer">
+                            <a href="#" class="pr-[0.75rem]">Xəbərlər</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="ml-[2rem] cursor-pointer">
+                            <a href="#" class="pr-[0.75rem]">Fakültələr</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="ml-[2rem] cursor-pointer">
+                            <a href="#" class="pr-[0.75rem]">Proqramlar</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="ml-[2rem] cursor-pointer">
+                            <a href="#" class="pr-[0.75rem]">Tələbələrlə bağlı</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="ml-[2rem] cursor-pointer">
+                            <a href="#" class="pr-[0.75rem]">Xidmətlər</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="ml-[3rem]">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/HeroSectionBg.png"
-            class="d-block w-full h-full max-h-[80vh] max-w-[100vw] bg-no-repeat bg-cover" alt="..." />
-          <div class="carousel-caption d-none d-md-block bottom-80 flex justify-start text-left">
-            <h1
-              class="w-9/12 font-semibold text-left not-italic text-5xl leading-[3.5rem] tracking-[-0.0008em] text-white">
-              A Memorandum of Cooperation has been signed between ASOIU and
-              Polymart LLC
-            </h1>
-            <p
-              class="w-9/12 font-normal text-left not-italic text-2xl leading-[2rem] tracking-[-0.0008em] text-[#DFE3F6] mt-3">
-              On June 8, Azerbaijan State Oil and Industry University (ASOIU)
-              hosted a meeting with Polymart Limited Liability Company (LLC).
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/HeroSectionBg.png"
+                        class="d-block w-full h-full max-h-[80vh] max-w-[100vw] bg-no-repeat bg-cover" alt="..." />
+                    <div class="carousel-caption d-none d-md-block bottom-80 flex justify-start text-left">
+                        <h1
+                            class="w-9/12 font-semibold text-left not-italic text-5xl leading-[3.5rem] tracking-[-0.0008em] text-white">
+                            A Memorandum of Cooperation has been signed between ASOIU and
+                            Polymart LLC
+                        </h1>
+                        <p
+                            class="w-9/12 font-normal text-left not-italic text-2xl leading-[2rem] tracking-[-0.0008em] text-[#DFE3F6] mt-3">
+                            On June 8, Azerbaijan State Oil and Industry University (ASOIU)
+                            hosted a meeting with Polymart Limited Liability Company (LLC).
+                        </p>
+                        <a href="#"
+                            class="inline-block p-4 bg-[#FFB200] rounded-2xl font-normal text-xl leading-6 text-[#1A265C] mt-3">Daha
+                            çox oxu</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/HeroSectionBg.png"
+                        class="d-block w-full h-full max-h-[80vh] max-w-[100vw] bg-no-repeat bg-cover" alt="..." />
+                    <div class="carousel-caption d-none d-md-block bottom-80 flex justify-start text-left">
+                        <h1
+                            class="w-9/12 font-semibold text-left not-italic text-5xl leading-[3.5rem] tracking-[-0.0008em] text-white">
+                            A Memorandum of Cooperation has been signed between ASOIU and
+                            Polymart LLC
+                        </h1>
+                        <p
+                            class="w-9/12 font-normal text-left not-italic text-2xl leading-[2rem] tracking-[-0.0008em] text-[#DFE3F6] mt-3">
+                            On June 8, Azerbaijan State Oil and Industry University (ASOIU)
+                            hosted a meeting with Polymart Limited Liability Company (LLC).
+                        </p>
+                        <a href="#"
+                            class="inline-block p-4 bg-[#FFB200] rounded-2xl font-normal text-xl leading-6 text-[#1A265C] mt-3">Daha
+                            çox oxu</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/HeroSectionBg.png"
+                        class="d-block w-full h-full max-h-[80vh] max-w-[100vw] bg-no-repeat bg-cover" alt="..." />
+                    <div class="carousel-caption d-none d-md-block bottom-80 flex justify-start text-left">
+                        <h1
+                            class="w-9/12 font-semibold text-left not-italic text-5xl leading-[3.5rem] tracking-[-0.0008em] text-white">
+                            A Memorandum of Cooperation has been signed between ASOIU and
+                            Polymart LLC
+                        </h1>
+                        <p
+                            class="w-9/12 font-normal text-left not-italic text-2xl leading-[2rem] tracking-[-0.0008em] text-[#DFE3F6] mt-3">
+                            On June 8, Azerbaijan State Oil and Industry University (ASOIU)
+                            hosted a meeting with Polymart Limited Liability Company (LLC).
+                        </p>
+                        <a href="#"
+                            class="inline-block p-4 bg-[#FFB200] rounded-2xl font-normal text-xl leading-6 text-[#1A265C] mt-3">Daha
+                            çox oxu</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="relative">
+        <img src="./images/HeroBgBg.png" alt="Your browser don't support this image"
+            class="w-full h-full bg-no-repeat bg-cover absolute z-[-10]" />
+        <section class="py-32 flex justify-center flex-col items-center">
+            <h2 class="text-6xl font-semibold leading-9 text-[#1E2782]">
+                Universitetdən daha artığı!
+            </h2>
+            <p class="w-6/12 text-center text-3xl font-normal leading-10 text-[#3046A8] mt-5">
+                Tələbələrimiz, fakültələrimiz və işçi heyətimiz həyatın hər sahəsini,
+                bir-birindən fərqli düşüncələri, ölkəmizin və dünyanın müxtəlif
+                yerlərini təmsil edirlər. Çünki böyük bir universitetdə olmağın ən
+                gözəl tərəflərindən biri təhsil almaq, işləmək, əylənmək, yeniliklərlə
+                tanış olmaqdır.
             </p>
-            <a href="#"
-              class="inline-block p-4 bg-[#FFB200] rounded-2xl font-normal text-xl leading-6 text-[#1A265C] mt-3">Daha
-              çox oxu</a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./images/HeroSectionBg.png"
-            class="d-block w-full h-full max-h-[80vh] max-w-[100vw] bg-no-repeat bg-cover" alt="..." />
-          <div class="carousel-caption d-none d-md-block bottom-80 flex justify-start text-left">
-            <h1
-              class="w-9/12 font-semibold text-left not-italic text-5xl leading-[3.5rem] tracking-[-0.0008em] text-white">
-              A Memorandum of Cooperation has been signed between ASOIU and
-              Polymart LLC
-            </h1>
-            <p
-              class="w-9/12 font-normal text-left not-italic text-2xl leading-[2rem] tracking-[-0.0008em] text-[#DFE3F6] mt-3">
-              On June 8, Azerbaijan State Oil and Industry University (ASOIU)
-              hosted a meeting with Polymart Limited Liability Company (LLC).
-            </p>
-            <a href="#"
-              class="inline-block p-4 bg-[#FFB200] rounded-2xl font-normal text-xl leading-6 text-[#1A265C] mt-3">Daha
-              çox oxu</a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./images/HeroSectionBg.png"
-            class="d-block w-full h-full max-h-[80vh] max-w-[100vw] bg-no-repeat bg-cover" alt="..." />
-          <div class="carousel-caption d-none d-md-block bottom-80 flex justify-start text-left">
-            <h1
-              class="w-9/12 font-semibold text-left not-italic text-5xl leading-[3.5rem] tracking-[-0.0008em] text-white">
-              A Memorandum of Cooperation has been signed between ASOIU and
-              Polymart LLC
-            </h1>
-            <p
-              class="w-9/12 font-normal text-left not-italic text-2xl leading-[2rem] tracking-[-0.0008em] text-[#DFE3F6] mt-3">
-              On June 8, Azerbaijan State Oil and Industry University (ASOIU)
-              hosted a meeting with Polymart Limited Liability Company (LLC).
-            </p>
-            <a href="#"
-              class="inline-block p-4 bg-[#FFB200] rounded-2xl font-normal text-xl leading-6 text-[#1A265C] mt-3">Daha
-              çox oxu</a>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </header>
+            <video class="w-7/12 h-2/12 border-[3rem] border-white border-solid rounded-3xl mt-4" width="320"
+                height="240" autoplay controls>
+                <source src="movie.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </section>
 
-  <main class="relative">
-    <img src="./images/HeroBgBg.png" alt="Your browser don't support this image"
-      class="w-full h-full bg-no-repeat bg-cover absolute z-[-10]" />
-    <section class="py-32 flex justify-center flex-col items-center">
-      <h2 class="text-6xl font-semibold leading-9 text-[#1E2782]">
-        Universitetdən daha artığı!
-      </h2>
-      <p class="w-6/12 text-center text-3xl font-normal leading-10 text-[#3046A8] mt-5">
-        Tələbələrimiz, fakültələrimiz və işçi heyətimiz həyatın hər sahəsini,
-        bir-birindən fərqli düşüncələri, ölkəmizin və dünyanın müxtəlif
-        yerlərini təmsil edirlər. Çünki böyük bir universitetdə olmağın ən
-        gözəl tərəflərindən biri təhsil almaq, işləmək, əylənmək, yeniliklərlə
-        tanış olmaqdır.
-      </p>
-      <video class="w-7/12 h-2/12 border-[3rem] border-white border-solid rounded-3xl mt-4" width="320" height="240"
-        autoplay controls>
-        <source src="movie.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
+        <!-- Murad's part starts -->
 
-    <!-- Murad's part starts -->
-
-    <div class="bg-[#9BA3EB] flex justify-between w-[40%] m-auto rounded-xl mt-16 mb-12">
-      <h2 class="text-[#3E5BDB] text-3xl w-[50%] m-4 p-4 rounded-xl opacity-80" id="h11">
-        Ən son xəbərlər
-      </h2>
-      <h2 class="text-[#3E5BDB] text-3xl w-[50%] m-4 p-4 rounded-xl opacity-80" id="h12">
-        Ən son elanlar
-      </h2>
-    </div>
-
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper news-announces">
-        <!-- filled in JavaScript -->
-      </div>
-      <div class="swiper-button-next btn"></div>
-      <div class="swiper-button-prev btn"></div>
-    </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-
-    <section>
-      <div id="academic" class="parallax">
-        <h1 class="text-5xl p-12 font-bold text-[#ffff]">
-          Akademik Dərəcələr
-        </h1>
-      </div>
-      <main class="flex justify-between w-[85%] p-8 m-auto relative -top-10">
-        <div
-          class="hover:shadow-lg hover:shadow-[#888] hover:bg-[#e5de00] transition-all duration-700 w-[31%] h-96 flex justify-center items-center bg-[#fff] flex-col rounded-xl">
-          <img src="./images/bacholer.png" alt="" />
-          <h1 class="text-4xl mt-4 font-semibold text-[#617EFf]">Bakalavr</h1>
+        <div class="bg-[#9BA3EB] flex justify-between w-[40%] m-auto rounded-xl mt-16 mb-12">
+            <h2 class="text-[#3E5BDB] text-3xl w-[50%] m-4 p-4 rounded-xl opacity-80" id="h11">
+                Ən son xəbərlər
+            </h2>
+            <h2 class="text-[#3E5BDB] text-3xl w-[50%] m-4 p-4 rounded-xl opacity-80" id="h12">
+                Ən son elanlar
+            </h2>
         </div>
-        <div
-          class="hover:shadow-lg hover:shadow-[#888] hover:bg-[#e5de00] transition-all duration-700 w-[31%] h-96 flex justify-center items-center bg-[#fff] flex-col rounded-xl">
-          <img src="./images/master.png" alt="" />
-          <h1 class="text-4xl mt-4 font-semibold text-[#617EFf]">Master</h1>
-        </div>
-        <div
-          class="hover:shadow-lg hover:shadow-[#888] hover:bg-[#e5de00] transition-all duration-700 w-[31%] h-96 flex justify-center items-center bg-[#fff] flex-col rounded-xl">
-          <img src="./images/PhD.png" alt="" />
-          <h1 class="text-4xl mt-4 font-semibold text-[#617EFf]">
-            Doktorantura
-          </h1>
-        </div>
-      </main>
-    </section>
 
-    <section class="p-8">
-      <h1 class="text-3xl text-[#1A265C] font-bold">Göstəricilərimiz</h1>
-      <main class="flex justify-between w-[90%] m-auto">
-        <div
-          class="rounded-xl transition-all duration-700 hover:shadow-[#777] hover:shadow-lg w-96 h-96 flex flex-col justify-center items-center text-center">
-          <img src="./images/students.png" alt="" />
-          <h1 class="text-3xl text-[#1A265C] p-2">Ümumi tələbələrin sayı</h1>
-          <span data-vanilla-counter data-start-at="16000" data-end-at="16183" data-time="0.1" data-delay="1"
-            data-format="{}" class="text-6xl text-[#617EFF] font-semibold mt-8">
-          </span>
-        </div>
-        <div
-          class="rounded-xl transition-all duration-700 hover:shadow-[#777] hover:shadow-lg w-96 h-96 flex flex-col justify-center items-center text-center">
-          <img src="./images/550+.png" alt="" />
-          <h1 class="text-3xl text-[#1A265C] p-2">
-            550+ bal toplayan tələbələrin sayı
-          </h1>
-          <span data-vanilla-counter data-start-at="500" data-end-at="789" data-time="0.1" data-delay="1"
-            data-format="{}" class="text-6xl text-[#617EFF] font-semibold">
-          </span>
-        </div>
-        <div
-          class="rounded-xl transition-all duration-700 hover:shadow-[#777] hover:shadow-lg w-96 h-96 flex flex-col justify-center items-center text-center">
-          <img src="./images/hired.png" alt="" />
-          <h1 class="text-3xl text-[#1A265C] p-2">
-            İşlə təmin olunmuş tələbələr
-          </h1>
-          <span data-vanilla-counter data-start-at="980" data-end-at="1057" data-time="0.1" data-delay="1"
-            data-format="{}" class="text-6xl text-[#617EFF] font-semibold">
-          </span>
-        </div>
-        <div
-          class="rounded-xl transition-all duration-700 hover:shadow-[#777] hover:shadow-lg w-96 h-96 flex flex-col justify-center items-center text-center">
-          <img src="./images/international.png" alt="" />
-          <h1 class="text-3xl text-[#1A265C] p-2">Beynəlxalq layihələr</h1>
-          <span data-vanilla-counter data-start-at="100" data-end-at="142" data-time="0.1" data-delay="1"
-            data-format="{}" class="text-6xl text-[#617EFF] font-semibold mt-8">
-          </span>
-        </div>
-      </main>
-    </section>
-
-    <!-- Murad's part ends -->
-
-    <!-- Gusein's part -->
-    <section class="fakulteler">
-      <h2 class="text-6xl font-semibold leading-9 mx-24 my-6">Fakültələr</h2>
-      <div class="swiper w-full h-1/2 fakultelerSwiper px-40 pb-9">
-        <div class="swiper-wrapper fakulteler-wrapper"></div>
-      </div>
-    </section>
-
-    <section class="mezunlarin-fikirleri mt-12">
-      <h2 class="text-6xl font-semibold leading-9 mx-24 my-6">
-        Məzunların fikirləri
-      </h2>
-      <div class="swiper mezunFikirleriSwiper mx-24">
-        <div class="swiper-wrapper mezun-fikir-wrapper"></div>
-        <div
-          class="swiper-button-next rounded-full w-32 h-32 hover:bg-white hover:shadow-xl transition-all duration-500">
-        </div>
-        <div
-          class="swiper-button-prev rounded-full w-32 h-32 hover:bg-white hover:shadow-xl transition-all duration-500">
-        </div>
-      </div>
-    </section>
-
-    <section class="one-cixan-proqramlar my-12">
-      <h2 class="text-6xl font-semibold leading-9 mx-24 my-6">
-        Önə çıxan proqramlar
-      </h2>
-      <div class="swiper w-full h-1/2 one-cixan-proqramlar-swiper px-40 pb-9">
-        <div class="swiper-wrapper one-cixan-proqramlar-wrapper"></div>
-      </div>
-    </section>
-    <!-- Gusein's part end -->
-    <!--Nihad's part start-->
-    <div class="logo-N px-36">
-      <div class="swiper muellimler mb-20">
-        <h2 class="text-6xl text-[#1A265C] font-bold mb-8">
-          Məşhur müəllimlərimiz
-        </h2>
-        <div class="swiper-wrapper bg-inherit py-12">
-          <div class="swiper-slide swiperTeachers flex items-center bg-inherit px-6 box-border">
-            <div style="background-image: url('./images/muellim2.png')"
-              class="shadow-lg shadow-[#888] bg-[url('assets/images/muellim2.png')] rounded-4xl muellimler-img shrink-0 mr-32 bg-cover bg-no-repeat bg-center ml-12">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper news-announces">
+                <!-- filled in JavaScript -->
             </div>
-            <div>
-              <p class="text-[#1A265C] text-5xl mb-12 mr-12">
-                Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim
-                üçün bu universitet həyatımın ən doğru seçimi idi.
-              </p>
-              <div class="mr-12">
-                <h3 class="text-[#617EFF] text-4xl font-bold">
-                  Filankəs Filankəsov,
-                </h3>
-                <p class="text-[#617EFF] text-4xl">
-                  Filan şirkətdə Mühəndis sdasd
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide swiperTeachers flex items-center bg-inherit px-6 box-border">
-            <div style="background-image: url('./images/muellim2.png')"
-              class="shadow-lg shadow-[#888] bg-[url('assets/images/muellim2.png')] rounded-4xl muellimler-img shrink-0 mr-32 bg-cover bg-no-repeat bg-center ml-12">
-            </div>
-            <div>
-              <p class="text-[#1A265C] text-5xl mb-12 mr-12">
-                Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim
-                üçün bu universitet həyatımın ən doğru seçimi idi.
-              </p>
-              <div class="mr-12">
-                <h3 class="text-[#617EFF] text-4xl font-bold">
-                  Filankəs Filankəsov,
-                </h3>
-                <p class="text-[#617EFF] text-4xl">
-                  Filan şirkətdə Mühəndis sdasd
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide swiperTeachers flex items-center bg-inherit px-6 box-border">
-            <div style="background-image: url('./images/muellim2.png')"
-              class="shadow-lg shadow-[#888] bg-[url('assets/images/muellim2.png')] rounded-4xl muellimler-img shrink-0 mr-32 bg-cover bg-no-repeat bg-center ml-12">
-            </div>
-            <div>
-              <p class="text-[#1A265C] text-5xl mb-12 mr-12">
-                Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim
-                üçün bu universitet həyatımın ən doğru seçimi idi.
-              </p>
-              <div class="mr-12">
-                <h3 class="text-[#617EFF] text-4xl font-bold">
-                  Filankəs Filankəsov,
-                </h3>
-                <p class="text-[#617EFF] text-4xl">
-                  Filan şirkətdə Mühəndis sdasd
-                </p>
-              </div>
-            </div>
-          </div>
+            <div class="swiper-button-next btn"></div>
+            <div class="swiper-button-prev btn"></div>
         </div>
-        <div
-          class="swiper-button-next rounded-full bg-inherit hover:bg-white w-24 h-24 hover:shadow-md ease-in duration-300 transition-all hover:shadow-[#888]">
-        </div>
-        <div
-          class="swiper-button-prev rounded-full bg-inherit hover:bg-white w-24 h-24 hover:shadow-md ease-in duration-300 transition-all hover:shadow-[#888]">
-        </div>
-      </div>
 
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".muellimler", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          effect: "fade",
-          fadeEffext: {
-            crossFade: true,
-          },
-          slidersPerView: 1,
-          slideActiveClass: "swipperActive",
-        });
-      </script>
-      <div class="swiper partnyorlar pb-52">
-        <h2 class="text-6xl text-[#1A265C] font-bold mb-20">
-          Partnyorlarımız
-        </h2>
-        <div class="swiper-wrapper">
-          <div
-            class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
-            <div class="h-full w-full bg-[url('./images/teknofest.svg')] bg-contain bg-no-repeat bg-center"></div>
-          </div>
-          <div
-            class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
-            <div class="h-full w-full bg-[url('./images/tehsilNazirliyi.svg')] bg-contain bg-no-repeat bg-center"></div>
-          </div>
-          <div
-            class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
-            <div class="h-full w-full bg-[url('./images/pashaBank.svg')] bg-contain bg-no-repeat bg-center"></div>
-          </div>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
 
-          <!--
+        <section>
+            <div id="academic" class="parallax">
+                <h1 class="text-5xl p-12 font-bold text-[#ffff]">
+                    Akademik Dərəcələr
+                </h1>
+            </div>
+            <main class="flex justify-between w-[85%] p-8 m-auto relative -top-10">
+                <div
+                    class="hover:shadow-lg hover:shadow-[#888] hover:bg-[#e5de00] transition-all duration-700 w-[31%] h-96 flex justify-center items-center bg-[#fff] flex-col rounded-xl">
+                    <img src="./images/bacholer.png" alt="" />
+                    <h1 class="text-4xl mt-4 font-semibold text-[#617EFf]">Bakalavr</h1>
+                </div>
+                <div
+                    class="hover:shadow-lg hover:shadow-[#888] hover:bg-[#e5de00] transition-all duration-700 w-[31%] h-96 flex justify-center items-center bg-[#fff] flex-col rounded-xl">
+                    <img src="./images/master.png" alt="" />
+                    <h1 class="text-4xl mt-4 font-semibold text-[#617EFf]">Master</h1>
+                </div>
+                <div
+                    class="hover:shadow-lg hover:shadow-[#888] hover:bg-[#e5de00] transition-all duration-700 w-[31%] h-96 flex justify-center items-center bg-[#fff] flex-col rounded-xl">
+                    <img src="./images/PhD.png" alt="" />
+                    <h1 class="text-4xl mt-4 font-semibold text-[#617EFf]">
+                        Doktorantura
+                    </h1>
+                </div>
+            </main>
+        </section>
+
+        <section class="p-8">
+            <h1 class="text-3xl text-[#1A265C] font-bold">Göstəricilərimiz</h1>
+            <main class="flex justify-between w-[90%] m-auto">
+                <div
+                    class="rounded-xl transition-all duration-700 hover:shadow-[#777] hover:shadow-lg w-96 h-96 flex flex-col justify-center items-center text-center">
+                    <img src="./images/students.png" alt="" />
+                    <h1 class="text-3xl text-[#1A265C] p-2">Ümumi tələbələrin sayı</h1>
+                    <span data-vanilla-counter data-start-at="16000" data-end-at="16183" data-time="0.1" data-delay="1"
+                        data-format="{}" class="text-6xl text-[#617EFF] font-semibold mt-8">
+                    </span>
+                </div>
+                <div
+                    class="rounded-xl transition-all duration-700 hover:shadow-[#777] hover:shadow-lg w-96 h-96 flex flex-col justify-center items-center text-center">
+                    <img src="./images/550+.png" alt="" />
+                    <h1 class="text-3xl text-[#1A265C] p-2">
+                        550+ bal toplayan tələbələrin sayı
+                    </h1>
+                    <span data-vanilla-counter data-start-at="500" data-end-at="789" data-time="0.1" data-delay="1"
+                        data-format="{}" class="text-6xl text-[#617EFF] font-semibold">
+                    </span>
+                </div>
+                <div
+                    class="rounded-xl transition-all duration-700 hover:shadow-[#777] hover:shadow-lg w-96 h-96 flex flex-col justify-center items-center text-center">
+                    <img src="./images/hired.png" alt="" />
+                    <h1 class="text-3xl text-[#1A265C] p-2">
+                        İşlə təmin olunmuş tələbələr
+                    </h1>
+                    <span data-vanilla-counter data-start-at="980" data-end-at="1057" data-time="0.1" data-delay="1"
+                        data-format="{}" class="text-6xl text-[#617EFF] font-semibold">
+                    </span>
+                </div>
+                <div
+                    class="rounded-xl transition-all duration-700 hover:shadow-[#777] hover:shadow-lg w-96 h-96 flex flex-col justify-center items-center text-center">
+                    <img src="./images/international.png" alt="" />
+                    <h1 class="text-3xl text-[#1A265C] p-2">Beynəlxalq layihələr</h1>
+                    <span data-vanilla-counter data-start-at="100" data-end-at="142" data-time="0.1" data-delay="1"
+                        data-format="{}" class="text-6xl text-[#617EFF] font-semibold mt-8">
+                    </span>
+                </div>
+            </main>
+        </section>
+
+        <!-- Murad's part ends -->
+
+        <!-- Gusein's part -->
+        <section class="fakulteler">
+            <h2 class="text-6xl font-semibold leading-9 mx-6 md:mx-24 my-6">Fakültələr</h2>
+            <div class="swiper w-full h-1/2 fakultelerSwiper px-6 md:px-40 pb-9 ">
+                <div class="w-full swiper-wrapper fakulteler-wrapper md:flex flex-row md:flex-col md:gap-3"></div>
+                <button
+                    class="fakultelerLoadMore block md:hidden mx-auto bg-sky-200 text-3xl p-8 rounded-3xl hover:opacity-60 transition-all duration-500">Daha
+                    çox
+                    yüklə</button>
+            </div>
+        </section>
+
+        <section class="mezunlarin-fikirleri mt-12">
+            <h2 class="text-5xl md:text-6xl font-semibold leading-9 mx-6 md:mx-24 my-6">
+                Məzunların fikirləri
+            </h2>
+            <div class="swiper mezunFikirleriSwiper mx-6 md:mx-24">
+                <div class="swiper-wrapper mezun-fikir-wrapper"></div>
+                <div
+                    class="hidden md:flex swiper-button-next rounded-full w-32 h-32 hover:bg-white hover:shadow-xl transition-all duration-500">
+                </div>
+                <div
+                    class="hidden md:flex swiper-button-prev rounded-full w-32 h-32 hover:bg-white hover:shadow-xl transition-all duration-500">
+                </div>
+            </div>
+        </section>
+
+        <section class="one-cixan-proqramlar my-12">
+            <h2 class="text-5xl md:text-6xl font-semibold leading-9 mx-6 md:mx-24 my-6">
+                Önə çıxan proqramlar
+            </h2>
+            <div class="swiper w-full h-1/2 one-cixan-proqramlar-swiper px-9 md:px-40 pb-9">
+                <div class="swiper-wrapper one-cixan-proqramlar-wrapper w-full md:flex flex-row md:flex-col md:gap-3">
+                </div>
+                <button
+                    class="proqramlarLoadMore block md:hidden mx-auto bg-sky-200 text-3xl p-8 rounded-3xl hover:opacity-60 transition-all duration-500">Daha
+                    çox
+                    yüklə</button>
+            </div>
+        </section>
+        <!-- Gusein's part end -->
+        <!--Nihad's part start-->
+        <div class="logo-N px-3 md:px-36">
+            <div class="swiper muellimler md:mb-20">
+                <h2 class="text-6xl text-[#1A265C] font-bold mb-8 mx-6 md:mx-24 ">
+                    Məşhur müəllimlərimiz
+                </h2>
+                <div class="swiper-wrapper bg-inherit py-12">
+                    <div
+                        class="swiper-slide swiperTeachers flex items-center flex-col md:flex-row bg-inherit px-1 md:px-6 box-border">
+                        <div style="background-image: url('./images/muellim2.png')"
+                            class="w-full h-96 md:w-2/5  shadow-lg shadow-[#888] bg-[url('assets/images/muellim2.png')] rounded-4xl muellimler-img shrink-0 md:mr-32 bg-cover bg-no-repeat bg-center md:ml-12">
+                        </div>
+                        <div>
+                            <p class="text-[#1A265C] text-center text-5xl mb-12 mr-12">
+                                Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim
+                                üçün bu universitet həyatımın ən doğru seçimi idi.
+                            </p>
+                            <div class="mr-12 text-center">
+                                <h3 class="text-[#617EFF] text-4xl font-bold">
+                                    Filankəs Filankəsov,
+                                </h3>
+                                <p class="text-[#617EFF] text-4xl">
+                                    Filan şirkətdə Mühəndis sdasd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide swiperTeachers flex items-center flex-col md:flex-row bg-inherit px-1 md:px-6 box-border">
+                        <div style="background-image: url('./images/muellim2.png')"
+                            class="w-full h-96 md:w-2/5  shadow-lg shadow-[#888] bg-[url('assets/images/muellim2.png')] rounded-4xl muellimler-img shrink-0 md:mr-32 bg-cover bg-no-repeat bg-center md:ml-12">
+                        </div>
+                        <div>
+                            <p class="text-[#1A265C] text-center text-5xl mb-12 mr-12">
+                                Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim
+                                üçün bu universitet həyatımın ən doğru seçimi idi.
+                            </p>
+                            <div class="mr-12 text-center">
+                                <h3 class="text-[#617EFF] text-4xl font-bold">
+                                    Filankəs Filankəsov,
+                                </h3>
+                                <p class="text-[#617EFF] text-4xl">
+                                    Filan şirkətdə Mühəndis sdasd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide swiperTeachers flex items-center flex-col md:flex-row bg-inherit px-1 md:px-6 box-border">
+                        <div style="background-image: url('./images/muellim2.png')"
+                            class="w-full h-96 md:w-2/5  shadow-lg shadow-[#888] bg-[url('assets/images/muellim2.png')] rounded-4xl muellimler-img shrink-0 md:mr-32 bg-cover bg-no-repeat bg-center md:ml-12">
+                        </div>
+                        <div>
+                            <p class="text-[#1A265C] text-center text-5xl mb-12 mr-12">
+                                Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim
+                                üçün bu universitet həyatımın ən doğru seçimi idi.
+                            </p>
+                            <div class="mr-12 text-center">
+                                <h3 class="text-[#617EFF] text-4xl font-bold">
+                                    Filankəs Filankəsov,
+                                </h3>
+                                <p class="text-[#617EFF] text-4xl">
+                                    Filan şirkətdə Mühəndis sdasd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="swiper-button-next md:flex hidden  rounded-full bg-inherit hover:bg-white w-24 h-24 hover:shadow-md ease-in duration-300 transition-all hover:shadow-[#888]">
+                </div>
+                <div
+                    class="swiper-button-prev md:flex hidden  rounded-full bg-inherit hover:bg-white w-24 h-24 hover:shadow-md ease-in duration-300 transition-all hover:shadow-[#888]">
+                </div>
+                <div class="swiper-pagination flex md:hidden justify-center"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".muellimler", {
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    effect: "fade",
+                    fadeEffext: {
+                        crossFade: true,
+                    },
+                    slidersPerView: 1,
+                    slideActiveClass: "swipperActive",
+
+                });
+            </script>
+            <div class="swiper partnyorlar pb-52">
+                <h2 class="text-6xl text-[#1A265C] font-bold mb-20 mx-6 md:mx-24 ">
+                    Partnyorlarımız
+                </h2>
+                <div class="swiper-wrapper">
+                    <div
+                        class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
+                        <div class="h-full w-full bg-[url('./images/teknofest.svg')] bg-contain bg-no-repeat bg-center">
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
+                        <div
+                            class="h-full w-full bg-[url('./images/tehsilNazirliyi.svg')] bg-contain bg-no-repeat bg-center">
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
+                        <div class="h-full w-full bg-[url('./images/pashaBank.svg')] bg-contain bg-no-repeat bg-center">
+                        </div>
+                    </div>
+
+                    <!--
       copy of codes for slider working properly
     -->
-          <div
-            class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
-            <div class="h-full w-full bg-[url('./images/teknofest.svg')] bg-contain bg-no-repeat bg-center"></div>
-          </div>
-          <div
-            class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
-            <div class="h-full w-full bg-[url('./images/tehsilNazirliyi.svg')] bg-contain bg-no-repeat bg-center"></div>
-          </div>
-          <div
-            class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
-            <div class="h-full w-full bg-[url('./images/pashaBank.svg')] bg-contain bg-no-repeat bg-center"></div>
-          </div>
+                    <div
+                        class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
+                        <div class="h-full w-full bg-[url('./images/teknofest.svg')] bg-contain bg-no-repeat bg-center">
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
+                        <div
+                            class="h-full w-full bg-[url('./images/tehsilNazirliyi.svg')] bg-contain bg-no-repeat bg-center">
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96">
+                        <div class="h-full w-full bg-[url('./images/pashaBank.svg')] bg-contain bg-no-repeat bg-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                if (window.screen.width < 768) {
+                    var swiper = new Swiper(".partnyorlar", {
+                        loop: true,
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                        updateOnWindowResize: true,
+                    });
+                } else {
+                    var swiper = new Swiper(".partnyorlar", {
+                        loop: true,
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                        updateOnWindowResize: true,
+                    });
+                }
+                swiper.loopFix();
+
+            </script>
         </div>
-      </div>
+    </main>
 
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <footer class="bg-[#dfe3f6] text-lg">
+        <div class="mx-16 md:mx-40 footer__div1 flex justify-start  flex-wrap">
+            <div class="footer__logo mx-auto">
+                <a href="">
+                    <svg width="200" height="34" viewBox="0 0 200 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24.8136 4.52113L32.843 9.02112L33.1234 13.6193C33.2781 16.1486 33.4042 21.6555 33.4042 25.8578V33.4975H30.3275H27.2508V23.5813V13.6647L24.9433 12.1878C23.6739 11.3751 21.2332 10.0034 19.5195 9.13962L16.4032 7.56885L11.608 10.3038L6.81271 13.0388L6.53712 17.652C6.38505 20.1892 6.23692 24.7927 6.20748 27.8814L6.15341 33.4975H3.07671H0V21.4692V9.44135L8.24118 4.77089C12.774 2.20198 16.55 0.0823677 16.6331 0.0603435C16.7162 0.0387597 20.3972 2.04561 24.8136 4.52113Z"
+                            fill="#1A265C" />
+                        <path
+                            d="M48.3482 13.4555V26.8903H55.1416H61.935L63.6571 23.917C64.6042 22.2815 65.8266 20.057 66.3729 18.973C67.5517 16.634 67.5003 16.4354 64.123 10.3254L61.8352 6.18749H56.1908H50.5459V3.09352V0L58.0983 0.12025L65.6508 0.240944L70.388 8.45819L75.1253 16.6759L70.2579 25.0865L65.3901 33.4975H53.5729H41.7553V16.7591V0.0207015H45.0518H48.3482V13.4555Z"
+                            fill="#1A265C" />
+                        <path
+                            d="M99.7688 11.7526C108.518 22.1115 109.687 23.3373 109.944 22.4202C110.103 21.8507 110.254 16.5776 110.278 10.7025L110.322 0.0207015H113.618H116.915V16.7591V33.4975H113.421H109.926L104.768 27.4409C101.93 24.1099 97.5197 18.94 94.9661 15.9526L90.3233 10.5205L90.0517 15.5121C89.9018 18.2572 89.7537 23.4267 89.722 27.0004L89.664 33.4975H86.5873H83.5106V16.7591V0.0207015L86.6972 0.034796L89.8838 0.0488938L99.7688 11.7526Z"
+                            fill="#1A265C" />
+                        <path
+                            d="M158.141 3.21422L158.271 6.18749L145.395 6.19409C138.312 6.19806 132.247 6.37337 131.914 6.58436C131.255 7.00282 130.985 12.5058 131.593 13.1163C131.779 13.3031 137.799 13.5546 144.971 13.6757L158.011 13.896L158.141 16.8692L158.271 19.8425H141.549H124.826V9.92632V0.0101289L141.419 0.125536L158.011 0.240944L158.141 3.21422Z"
+                            fill="#1A265C" />
+                        <path
+                            d="M158.231 27.3308V33.4975H141.774C132.723 33.4975 125.223 33.3438 125.107 33.1562C124.991 32.9681 124.844 31.5312 124.78 29.9627L124.664 27.1105L138.37 26.9942L152.077 26.8779V24.0209V21.164H155.154H158.231V27.3308Z"
+                            fill="#1A265C" />
+                        <path
+                            d="M172.735 9.93689V19.8535L175.043 21.319C176.312 22.1255 178.643 23.5038 180.223 24.3826C183.51 26.2102 182.61 26.3996 189.547 22.422L193.393 20.2169V10.1188V0.0207015H196.696H200L199.883 12.0155L199.766 24.0104L191.415 28.7267L183.064 33.4434L181.745 32.6712C181.02 32.2466 177.312 30.1393 173.504 27.9884L166.582 24.0778V12.049V0.0207015H169.658H172.735V9.93689Z"
+                            fill="#1A265C" />
+                    </svg>
+                    <h2>Azərbaycan Dövlət Neft və Sənaye Universiteti</h2>
+                </a>
+            </div>
+            <div class="flex flex-col mt-3">
+                <h3 class="footer__h3 shrink-0">Fakültələr</h3>
+                <a href="" class="footer__a">Geoloji kəşfiyyat</a>
+                <a href="" class="footer__a">Qaz-Neft-Mədən</a>
+                <a href="" class="footer__a">Kimya-Texnologiya</a>
+                <a href="" class="footer__a">Neft</a>
+                <a href="" class="footer__a">Energetika</a>
+                <a href="" class="footer__a">İT və idarəetmə</a>
+                <a href="" class="footer__a">İqtisadiyyat və menecment</a>
+            </div>
+            <div class="flex flex-col mt-3">
+                <h3 class="footer__h3">Proqramlar</h3>
+                <a href="" class="footer__a">BA proqramları</a>
+                <a href="" class="footer__a">Yay Məktəbi</a>
+                <a href="" class="footer__a">SABAH Qrupları</a>
+                <a href="" class="footer__a">eazi Start</a>
+                <a href="" class="footer__a">IT Club</a>
+            </div>
+            <div class="flex flex-col mt-3">
+                <h3 class="footer__h3">Xidmətlər</h3>
+                <a href="" class="footer__a">LMS</a>
+                <a href="" class="footer__a">Azii e-Kitab evi</a>
+                <a href="" class="footer__a">Məzun-Karyera Mərkəzi</a>
+                <a href="" class="footer__a">HPC Mərkəzi</a>
+                <a href="" class="footer__a">Akt zalı</a>
+                <a href="" class="footer__a">Yataqxana</a>
+                <a href="" class="footer__a">Kitabxana</a>
+            </div>
+        </div>
 
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".partnyorlar", {
-          loop: true,
-          slidesPerView: 4,
-          spaceBetween: 20,
-          updateOnWindowResize: true,
-          mousewheel: true,
-        });
-        swiper.loopFix();
-      </script>
-    </div>
-  </main>
+        <div class="flex justify-between items-center px-16 py-8  footer__div2">
+            <div class="flex shrink-0 flex-col md:flex-row gap-3">
+                <a href="" class="footer__div2__div1__a footer__a mr-8 inline-block">Haqqımızda</a>
+                <a href="" class="footer__div2__div1__a footer__a mr-8 inline-block">Ən çox verilən suallar</a>
+                <a href="" class="footer__div2__div1__a footer__a mr-8 inline-block">Təklifim var</a>
+                <a href="" class="footer__div2__div1__a footer__a mr-8 inline-block">Əlaqə</a>
+            </div>
+            <div class="flex">
+                <a href="" class="sm mr-8 inline-block p-4 rounded-full bg-white">
+                    <svg class="w-6 md:w-9" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.465 1.066C8.638 1.012 9.012 1 12 1C14.988 1 15.362 1.013 16.534 1.066C17.706 1.119 18.506 1.306 19.206 1.577C19.939 1.854 20.604 2.287 21.154 2.847C21.714 3.396 22.146 4.06 22.422 4.794C22.694 5.494 22.88 6.294 22.934 7.464C22.988 8.639 23 9.013 23 12C23 14.988 22.987 15.362 22.934 16.535C22.881 17.705 22.694 18.505 22.422 19.205C22.146 19.9391 21.7133 20.6042 21.154 21.154C20.604 21.714 19.939 22.146 19.206 22.422C18.506 22.694 17.706 22.88 16.536 22.934C15.362 22.988 14.988 23 12 23C9.012 23 8.638 22.987 7.465 22.934C6.295 22.881 5.495 22.694 4.795 22.422C4.06092 22.146 3.39582 21.7133 2.846 21.154C2.28638 20.6047 1.85331 19.9399 1.577 19.206C1.306 18.506 1.12 17.706 1.066 16.536C1.012 15.361 1 14.987 1 12C1 9.012 1.013 8.638 1.066 7.466C1.119 6.294 1.306 5.494 1.577 4.794C1.85372 4.06008 2.28712 3.39531 2.847 2.846C3.39604 2.2865 4.06047 1.85344 4.794 1.577C5.494 1.306 6.294 1.12 7.464 1.066H7.465ZM16.445 3.046C15.285 2.993 14.937 2.982 12 2.982C9.063 2.982 8.715 2.993 7.555 3.046C6.482 3.095 5.9 3.274 5.512 3.425C4.999 3.625 4.632 3.862 4.247 4.247C3.88205 4.60205 3.60118 5.03428 3.425 5.512C3.274 5.9 3.095 6.482 3.046 7.555C2.993 8.715 2.982 9.063 2.982 12C2.982 14.937 2.993 15.285 3.046 16.445C3.095 17.518 3.274 18.1 3.425 18.488C3.601 18.965 3.882 19.398 4.247 19.753C4.602 20.118 5.035 20.399 5.512 20.575C5.9 20.726 6.482 20.905 7.555 20.954C8.715 21.007 9.062 21.018 12 21.018C14.938 21.018 15.285 21.007 16.445 20.954C17.518 20.905 18.1 20.726 18.488 20.575C19.001 20.375 19.368 20.138 19.753 19.753C20.118 19.398 20.399 18.965 20.575 18.488C20.726 18.1 20.905 17.518 20.954 16.445C21.007 15.285 21.018 14.937 21.018 12C21.018 9.063 21.007 8.715 20.954 7.555C20.905 6.482 20.726 5.9 20.575 5.512C20.375 4.999 20.138 4.632 19.753 4.247C19.3979 3.88207 18.9657 3.60121 18.488 3.425C18.1 3.274 17.518 3.095 16.445 3.046ZM10.595 15.391C11.3797 15.7176 12.2534 15.7617 13.0669 15.5157C13.8805 15.2697 14.5834 14.7489 15.0556 14.0422C15.5278 13.3356 15.7401 12.4869 15.656 11.6411C15.572 10.7953 15.197 10.005 14.595 9.405C14.2112 9.02148 13.7472 8.72781 13.2363 8.54515C12.7255 8.36248 12.1804 8.29536 11.6405 8.34862C11.1006 8.40187 10.5792 8.57418 10.1138 8.85313C9.64845 9.13208 9.25074 9.51074 8.9493 9.96185C8.64786 10.413 8.45019 10.9253 8.37052 11.462C8.29084 11.9986 8.33115 12.5463 8.48854 13.0655C8.64593 13.5847 8.91648 14.0626 9.28072 14.4647C9.64496 14.8668 10.0938 15.1832 10.595 15.391ZM8.002 8.002C8.52702 7.47697 9.15032 7.0605 9.8363 6.77636C10.5223 6.49222 11.2575 6.34597 12 6.34597C12.7425 6.34597 13.4777 6.49222 14.1637 6.77636C14.8497 7.0605 15.473 7.47697 15.998 8.002C16.523 8.52702 16.9395 9.15032 17.2236 9.8363C17.5078 10.5223 17.654 11.2575 17.654 12C17.654 12.7425 17.5078 13.4777 17.2236 14.1637C16.9395 14.8497 16.523 15.473 15.998 15.998C14.9377 17.0583 13.4995 17.654 12 17.654C10.5005 17.654 9.06234 17.0583 8.002 15.998C6.94166 14.9377 6.34597 13.4995 6.34597 12C6.34597 10.5005 6.94166 9.06234 8.002 8.002ZM18.908 7.188C19.0381 7.06527 19.1423 6.91768 19.2143 6.75397C19.2863 6.59027 19.3248 6.41377 19.3274 6.23493C19.33 6.05609 19.2967 5.87855 19.2295 5.71281C19.1622 5.54707 19.0624 5.39651 18.936 5.27004C18.8095 5.14357 18.6589 5.04376 18.4932 4.97652C18.3275 4.90928 18.1499 4.87598 17.9711 4.87858C17.7922 4.88119 17.6157 4.91965 17.452 4.9917C17.2883 5.06374 17.1407 5.1679 17.018 5.298C16.7793 5.55103 16.6486 5.88712 16.6537 6.23493C16.6588 6.58274 16.7992 6.91488 17.0452 7.16084C17.2911 7.40681 17.6233 7.54723 17.9711 7.5523C18.3189 7.55737 18.655 7.42669 18.908 7.188Z"
+                            fill="#A4AFE5" />
+                    </svg>
+                </a>
+                <a href="" class="sm mr-8 inline-block p-4 rounded-full bg-white">
+                    <svg class="w-6 md:w-9" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.643 4.93708C22.808 5.30708 21.911 5.55708 20.968 5.67008C21.941 5.08787 22.669 4.17154 23.016 3.09208C22.1019 3.63507 21.1014 4.01727 20.058 4.22208C19.3564 3.47294 18.4271 2.9764 17.4143 2.80955C16.4016 2.6427 15.3621 2.81487 14.4572 3.29933C13.5524 3.78379 12.8328 4.55344 12.4102 5.48878C11.9875 6.42412 11.8855 7.47283 12.12 8.47208C10.2677 8.37907 8.45564 7.89763 6.80144 7.05898C5.14723 6.22034 3.68785 5.04324 2.51801 3.60408C2.11801 4.29408 1.88801 5.09408 1.88801 5.94608C1.88757 6.71307 2.07644 7.46832 2.43789 8.14481C2.79934 8.8213 3.32217 9.39812 3.96001 9.82408C3.22029 9.80054 2.49688 9.60066 1.85001 9.24108V9.30108C1.84994 10.3768 2.22204 11.4195 2.90319 12.2521C3.58434 13.0847 4.53258 13.656 5.58701 13.8691C4.9008 14.0548 4.18135 14.0821 3.48301 13.9491C3.78051 14.8747 4.36001 15.6841 5.14038 16.264C5.92075 16.8439 6.86293 17.1653 7.83501 17.1831C6.18484 18.4785 4.1469 19.1812 2.04901 19.1781C1.67739 19.1782 1.30609 19.1565 0.937012 19.1131C3.06649 20.4823 5.54535 21.2089 8.07701 21.2061C16.647 21.2061 21.332 14.1081 21.332 7.95208C21.332 7.75208 21.327 7.55008 21.318 7.35008C22.2293 6.69105 23.0159 5.87497 23.641 4.94008L23.643 4.93708Z"
+                            fill="#A4AFE5" />
+                    </svg>
+                </a>
+                <a href="" class="sm inline-block p-4 rounded-full bg-white">
+                    <svg class="w-6 md:w-9" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1053_3096)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
+                                fill="#A4AFE5" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1053_3096">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--Nihad's part end-->
 
-  <footer class="footer">
-    <div class="footer__div footer__div1 flex justify-start">
-      <div class="footer__logo">
-        <a href="">
-          <svg width="200" height="34" viewBox="0 0 200 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M24.8136 4.52113L32.843 9.02112L33.1234 13.6193C33.2781 16.1486 33.4042 21.6555 33.4042 25.8578V33.4975H30.3275H27.2508V23.5813V13.6647L24.9433 12.1878C23.6739 11.3751 21.2332 10.0034 19.5195 9.13962L16.4032 7.56885L11.608 10.3038L6.81271 13.0388L6.53712 17.652C6.38505 20.1892 6.23692 24.7927 6.20748 27.8814L6.15341 33.4975H3.07671H0V21.4692V9.44135L8.24118 4.77089C12.774 2.20198 16.55 0.0823677 16.6331 0.0603435C16.7162 0.0387597 20.3972 2.04561 24.8136 4.52113Z"
-              fill="#1A265C" />
-            <path
-              d="M48.3482 13.4555V26.8903H55.1416H61.935L63.6571 23.917C64.6042 22.2815 65.8266 20.057 66.3729 18.973C67.5517 16.634 67.5003 16.4354 64.123 10.3254L61.8352 6.18749H56.1908H50.5459V3.09352V0L58.0983 0.12025L65.6508 0.240944L70.388 8.45819L75.1253 16.6759L70.2579 25.0865L65.3901 33.4975H53.5729H41.7553V16.7591V0.0207015H45.0518H48.3482V13.4555Z"
-              fill="#1A265C" />
-            <path
-              d="M99.7688 11.7526C108.518 22.1115 109.687 23.3373 109.944 22.4202C110.103 21.8507 110.254 16.5776 110.278 10.7025L110.322 0.0207015H113.618H116.915V16.7591V33.4975H113.421H109.926L104.768 27.4409C101.93 24.1099 97.5197 18.94 94.9661 15.9526L90.3233 10.5205L90.0517 15.5121C89.9018 18.2572 89.7537 23.4267 89.722 27.0004L89.664 33.4975H86.5873H83.5106V16.7591V0.0207015L86.6972 0.034796L89.8838 0.0488938L99.7688 11.7526Z"
-              fill="#1A265C" />
-            <path
-              d="M158.141 3.21422L158.271 6.18749L145.395 6.19409C138.312 6.19806 132.247 6.37337 131.914 6.58436C131.255 7.00282 130.985 12.5058 131.593 13.1163C131.779 13.3031 137.799 13.5546 144.971 13.6757L158.011 13.896L158.141 16.8692L158.271 19.8425H141.549H124.826V9.92632V0.0101289L141.419 0.125536L158.011 0.240944L158.141 3.21422Z"
-              fill="#1A265C" />
-            <path
-              d="M158.231 27.3308V33.4975H141.774C132.723 33.4975 125.223 33.3438 125.107 33.1562C124.991 32.9681 124.844 31.5312 124.78 29.9627L124.664 27.1105L138.37 26.9942L152.077 26.8779V24.0209V21.164H155.154H158.231V27.3308Z"
-              fill="#1A265C" />
-            <path
-              d="M172.735 9.93689V19.8535L175.043 21.319C176.312 22.1255 178.643 23.5038 180.223 24.3826C183.51 26.2102 182.61 26.3996 189.547 22.422L193.393 20.2169V10.1188V0.0207015H196.696H200L199.883 12.0155L199.766 24.0104L191.415 28.7267L183.064 33.4434L181.745 32.6712C181.02 32.2466 177.312 30.1393 173.504 27.9884L166.582 24.0778V12.049V0.0207015H169.658H172.735V9.93689Z"
-              fill="#1A265C" />
-          </svg>
-          <h2>Azərbaycan Dövlət Neft və Sənaye Universiteti</h2>
-        </a>
-      </div>
-      <div class="flex flex-col">
-        <h3 class="footer__h3">Fakültələr</h3>
-        <a href="" class="footer__a">Geoloji kəşfiyyat</a>
-        <a href="" class="footer__a">Qaz-Neft-Mədən</a>
-        <a href="" class="footer__a">Kimya-Texnologiya</a>
-        <a href="" class="footer__a">Neft</a>
-        <a href="" class="footer__a">Energetika</a>
-        <a href="" class="footer__a">İT və idarəetmə</a>
-        <a href="" class="footer__a">İqtisadiyyat və menecment</a>
-      </div>
-      <div class="flex flex-col">
-        <h3 class="footer__h3">Proqramlar</h3>
-        <a href="" class="footer__a">BA proqramları</a>
-        <a href="" class="footer__a">Yay Məktəbi</a>
-        <a href="" class="footer__a">SABAH Qrupları</a>
-        <a href="" class="footer__a">eazi Start</a>
-        <a href="" class="footer__a">IT Club</a>
-      </div>
-      <div class="flex flex-col">
-        <h3 class="footer__h3">Xidmətlər</h3>
-        <a href="" class="footer__a">LMS</a>
-        <a href="" class="footer__a">Azii e-Kitab evi</a>
-        <a href="" class="footer__a">Məzun-Karyera Mərkəzi</a>
-        <a href="" class="footer__a">HPC Mərkəzi</a>
-        <a href="" class="footer__a">Akt zalı</a>
-        <a href="" class="footer__a">Yataqxana</a>
-        <a href="" class="footer__a">Kitabxana</a>
-      </div>
-    </div>
-
-    <div class="flex justify-between items-center py-8 footer__div footer__div2">
-      <div class="flex shrink-0">
-        <a href="" class="footer__div2__div1__a footer__a mr-8 inline-block">Haqqımızda</a>
-        <a href="" class="footer__div2__div1__a footer__a mr-8 inline-block">Ən çox verilən suallar</a>
-        <a href="" class="footer__div2__div1__a footer__a mr-8 inline-block">Təklifim var</a>
-        <a href="" class="footer__div2__div1__a footer__a mr-8 inline-block">Əlaqə</a>
-      </div>
-      <div class="flex">
-        <a href="" class="sm mr-8 inline-block p-4 rounded-full bg-white">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M7.465 1.066C8.638 1.012 9.012 1 12 1C14.988 1 15.362 1.013 16.534 1.066C17.706 1.119 18.506 1.306 19.206 1.577C19.939 1.854 20.604 2.287 21.154 2.847C21.714 3.396 22.146 4.06 22.422 4.794C22.694 5.494 22.88 6.294 22.934 7.464C22.988 8.639 23 9.013 23 12C23 14.988 22.987 15.362 22.934 16.535C22.881 17.705 22.694 18.505 22.422 19.205C22.146 19.9391 21.7133 20.6042 21.154 21.154C20.604 21.714 19.939 22.146 19.206 22.422C18.506 22.694 17.706 22.88 16.536 22.934C15.362 22.988 14.988 23 12 23C9.012 23 8.638 22.987 7.465 22.934C6.295 22.881 5.495 22.694 4.795 22.422C4.06092 22.146 3.39582 21.7133 2.846 21.154C2.28638 20.6047 1.85331 19.9399 1.577 19.206C1.306 18.506 1.12 17.706 1.066 16.536C1.012 15.361 1 14.987 1 12C1 9.012 1.013 8.638 1.066 7.466C1.119 6.294 1.306 5.494 1.577 4.794C1.85372 4.06008 2.28712 3.39531 2.847 2.846C3.39604 2.2865 4.06047 1.85344 4.794 1.577C5.494 1.306 6.294 1.12 7.464 1.066H7.465ZM16.445 3.046C15.285 2.993 14.937 2.982 12 2.982C9.063 2.982 8.715 2.993 7.555 3.046C6.482 3.095 5.9 3.274 5.512 3.425C4.999 3.625 4.632 3.862 4.247 4.247C3.88205 4.60205 3.60118 5.03428 3.425 5.512C3.274 5.9 3.095 6.482 3.046 7.555C2.993 8.715 2.982 9.063 2.982 12C2.982 14.937 2.993 15.285 3.046 16.445C3.095 17.518 3.274 18.1 3.425 18.488C3.601 18.965 3.882 19.398 4.247 19.753C4.602 20.118 5.035 20.399 5.512 20.575C5.9 20.726 6.482 20.905 7.555 20.954C8.715 21.007 9.062 21.018 12 21.018C14.938 21.018 15.285 21.007 16.445 20.954C17.518 20.905 18.1 20.726 18.488 20.575C19.001 20.375 19.368 20.138 19.753 19.753C20.118 19.398 20.399 18.965 20.575 18.488C20.726 18.1 20.905 17.518 20.954 16.445C21.007 15.285 21.018 14.937 21.018 12C21.018 9.063 21.007 8.715 20.954 7.555C20.905 6.482 20.726 5.9 20.575 5.512C20.375 4.999 20.138 4.632 19.753 4.247C19.3979 3.88207 18.9657 3.60121 18.488 3.425C18.1 3.274 17.518 3.095 16.445 3.046ZM10.595 15.391C11.3797 15.7176 12.2534 15.7617 13.0669 15.5157C13.8805 15.2697 14.5834 14.7489 15.0556 14.0422C15.5278 13.3356 15.7401 12.4869 15.656 11.6411C15.572 10.7953 15.197 10.005 14.595 9.405C14.2112 9.02148 13.7472 8.72781 13.2363 8.54515C12.7255 8.36248 12.1804 8.29536 11.6405 8.34862C11.1006 8.40187 10.5792 8.57418 10.1138 8.85313C9.64845 9.13208 9.25074 9.51074 8.9493 9.96185C8.64786 10.413 8.45019 10.9253 8.37052 11.462C8.29084 11.9986 8.33115 12.5463 8.48854 13.0655C8.64593 13.5847 8.91648 14.0626 9.28072 14.4647C9.64496 14.8668 10.0938 15.1832 10.595 15.391ZM8.002 8.002C8.52702 7.47697 9.15032 7.0605 9.8363 6.77636C10.5223 6.49222 11.2575 6.34597 12 6.34597C12.7425 6.34597 13.4777 6.49222 14.1637 6.77636C14.8497 7.0605 15.473 7.47697 15.998 8.002C16.523 8.52702 16.9395 9.15032 17.2236 9.8363C17.5078 10.5223 17.654 11.2575 17.654 12C17.654 12.7425 17.5078 13.4777 17.2236 14.1637C16.9395 14.8497 16.523 15.473 15.998 15.998C14.9377 17.0583 13.4995 17.654 12 17.654C10.5005 17.654 9.06234 17.0583 8.002 15.998C6.94166 14.9377 6.34597 13.4995 6.34597 12C6.34597 10.5005 6.94166 9.06234 8.002 8.002ZM18.908 7.188C19.0381 7.06527 19.1423 6.91768 19.2143 6.75397C19.2863 6.59027 19.3248 6.41377 19.3274 6.23493C19.33 6.05609 19.2967 5.87855 19.2295 5.71281C19.1622 5.54707 19.0624 5.39651 18.936 5.27004C18.8095 5.14357 18.6589 5.04376 18.4932 4.97652C18.3275 4.90928 18.1499 4.87598 17.9711 4.87858C17.7922 4.88119 17.6157 4.91965 17.452 4.9917C17.2883 5.06374 17.1407 5.1679 17.018 5.298C16.7793 5.55103 16.6486 5.88712 16.6537 6.23493C16.6588 6.58274 16.7992 6.91488 17.0452 7.16084C17.2911 7.40681 17.6233 7.54723 17.9711 7.5523C18.3189 7.55737 18.655 7.42669 18.908 7.188Z"
-              fill="#A4AFE5" />
-          </svg>
-        </a>
-        <a href="" class="sm mr-8 inline-block p-4 rounded-full bg-white">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M23.643 4.93708C22.808 5.30708 21.911 5.55708 20.968 5.67008C21.941 5.08787 22.669 4.17154 23.016 3.09208C22.1019 3.63507 21.1014 4.01727 20.058 4.22208C19.3564 3.47294 18.4271 2.9764 17.4143 2.80955C16.4016 2.6427 15.3621 2.81487 14.4572 3.29933C13.5524 3.78379 12.8328 4.55344 12.4102 5.48878C11.9875 6.42412 11.8855 7.47283 12.12 8.47208C10.2677 8.37907 8.45564 7.89763 6.80144 7.05898C5.14723 6.22034 3.68785 5.04324 2.51801 3.60408C2.11801 4.29408 1.88801 5.09408 1.88801 5.94608C1.88757 6.71307 2.07644 7.46832 2.43789 8.14481C2.79934 8.8213 3.32217 9.39812 3.96001 9.82408C3.22029 9.80054 2.49688 9.60066 1.85001 9.24108V9.30108C1.84994 10.3768 2.22204 11.4195 2.90319 12.2521C3.58434 13.0847 4.53258 13.656 5.58701 13.8691C4.9008 14.0548 4.18135 14.0821 3.48301 13.9491C3.78051 14.8747 4.36001 15.6841 5.14038 16.264C5.92075 16.8439 6.86293 17.1653 7.83501 17.1831C6.18484 18.4785 4.1469 19.1812 2.04901 19.1781C1.67739 19.1782 1.30609 19.1565 0.937012 19.1131C3.06649 20.4823 5.54535 21.2089 8.07701 21.2061C16.647 21.2061 21.332 14.1081 21.332 7.95208C21.332 7.75208 21.327 7.55008 21.318 7.35008C22.2293 6.69105 23.0159 5.87497 23.641 4.94008L23.643 4.93708Z"
-              fill="#A4AFE5" />
-          </svg>
-        </a>
-        <a href="" class="sm mr-8 inline-block p-4 rounded-full bg-white"><svg width="24" height="24"
-            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1053_3096)">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
-                fill="#A4AFE5" />
-            </g>
-            <defs>
-              <clipPath id="clip0_1053_3096">
-                <rect width="24" height="24" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <!--Nihad's part end-->
-
-  <script src="./js/murad'sPart.js"></script>
-  <script src="./js/swipers/fakulterSwipers.js"></script>
-  <script src="./js/swipers/mezunFikirleriSwiper.js"></script>
-  <script src="./js/swipers/oneCixanProqramSwiper.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+    <script src="./js/murad'sPart.js"></script>
+    <script src="./js/swipers/fakulterSwipers.js"></script>
+    <script src="./js/swipers/mezunFikirleriSwiper.js"></script>
+    <script src="./js/swipers/oneCixanProqramSwiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

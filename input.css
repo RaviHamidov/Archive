@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 /* Nihad's Part CSS start */
-.footer {
-  background-color: #dfe3f6;
-  font-size: 1.6rem;
-}
+
 
 .sm:hover>svg path {
   fill: white;
@@ -109,10 +106,10 @@ svg path {
   transition: all ease-in 0.5s;
 }
 
-.muellimler-img {
+/* .muellimler-img {
   height: 34rem;
   width: 50.3rem;
-}
+} */
 
 /* Section End */
 
@@ -135,12 +132,17 @@ svg path {
   background-color: #fff;
   opacity: 0.5;
   padding: 30px;
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .parallax {
   background-size: cover;
   background-position: center;
-  height: 45vh;
+  height: 53vh;
+  margin-top: 1.5em;
 }
 
 /* .swiper {
@@ -173,6 +175,7 @@ svg path {
   border: 0 !important;
 }
 
+
 .carousel-indicators .active {
   width: 45px !important;
   height: 10px !important;
@@ -180,5 +183,7 @@ svg path {
   border-radius: 15px;
   border: 0 !important;
 }
+
+/* Section End */
 
 /* Section End */

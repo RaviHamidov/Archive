@@ -23,19 +23,19 @@ const mezunFikirData = [
     work: "Filan şirkətdə Mühəndis",
   },
 ];
-// src = "./images/mezun-fikirleri/mezun-fikir-background.png" alt = "logo" />
+
 mezunFikirData.forEach((data) => {
   mezunFikirleriWrapper.innerHTML += `
-        <div class="swiper-slide flex p-9">
-          <img class="w-2/4" src="${data.scr}" alt="bombee">
-          <div class="w-2/4 flex flex-col justify-center px-6">       
-            <p class="text-6xl">
+        <div class="swiper-slide flex flex-col md:flex-row md:p-9">
+          <img class="w-full md:w-2/4" src="${data.scr}" alt="bombee">
+          <div class="w-2/4 flex flex-col justify-center mx-auto px-6">       
+            <p class="text-xl md:text-6xl text-center mb-6">
                 ${data.description}
             </p>
-            <p class="text-4xl pt-6 italic">
+            <p class="text-xl md:text-6xl italic ">
                 ${data.fullName}
             </p>
-            <p class="text-4xl italic">
+            <p class="text-xl md:text-6xl italic">
                 ${data.work}
             </p>            
           </div>
@@ -48,5 +48,8 @@ var swiper = new Swiper(".mezunFikirleriSwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
   },
 });

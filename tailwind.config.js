@@ -20,6 +20,9 @@ module.exports = {
         veryLightGray: "hsl(0, 0%, 98%)",
         guseincolor: "hsl(0, 0%, 98%)",
       },
+      backgroundImage: {
+        newsPageHeader: "url('./images/news-page/news_header_logo.png')"
+      }
     },
   },
   plugins: [],
