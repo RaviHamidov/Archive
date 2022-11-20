@@ -60,11 +60,6 @@ var announceData = [
     header: " Noyabrın 3-də Azərbaycan Respublikası Elm və Təhsil Nazirliyi, .",
   },
   {
-    img: "http://asoiu.edu.az/photos/shares/News/5557dbf26964599f42754ab1c515de37.jpeg",
-    date: "27 Iyul 2022",
-    header: " Noyabrın 3-də Azərbaycan Respublikası Elm və Təhsil Nazirliyi, .",
-  },
-  {
     img: "http://asoiu.edu.az/photos/shares/Xeberler/635badfd86851.JPG",
     date: "27 Iyul 2022",
     header: " Noyabrın 3-də Azərbaycan Respublikası Elm və Təhsil Nazirliyi, .",
@@ -142,20 +137,21 @@ function showAnnounces() {
     announceHTML =
       announceHTML +
       `
-       <div class="swiper-slide">
-       <span  class="relative top-20 hover:bg-[#dde] left-10 text-2xl  bg-[#ddd] text-[#1b7ced] font-semibold p-2 rounded">
-            <img src="../images/date.png" class="w-8 h-8 m-2 fill-cyan-600 inline" alt="date"/> ${announceData[i].date}
-             
-            </span>
-         <img
-           src=${announceData[i].img}
-           class="object-cover w-[95%] h-[35vh] rounded-xl block"
-           alt=""
-         />
-         <p class="text-3xl text-[#1A265C] p-2">
-          ${announceData[i].header}
-         </p>
-       </div>
+      <div class="swiper-slide relative">
+      <span
+        class="absolute top-0 left-0 text-base leading-4 bg-[#e4e7f3] opacity-90 text-[#617EFF] font-normal p-1 rounded m-3"
+      >
+        <i class="fa-solid fa-calendar p-1 mr-"></i>
+        ${announceData[i].date}
+      </span>
+    
+      <img
+        src="${announceData[i].img}"
+        class="object-cover w-full rounded-xl block"
+        alt=""
+      />
+      <p class="text-3xl text-[#1A265C] p-2">${announceData[i].header}</p>
+    </div>
      `;
   }
   wrapper.insertAdjacentHTML("beforeend", announceHTML);
@@ -173,21 +169,22 @@ function showNews() {
     newsHTML =
       newsHTML +
       `
-         <div class="swiper-slide">
-         <span  class="relative top-20 hover:bg-[#dde] left-10 text-2xl  bg-[#ddd] text-[#1b7ced] font-semibold p-2 rounded">
-         <img src="../images/date.png" class="w-8 h-8 m-2 fill-cyan-600 inline" alt="date"/> ${newsData[i].date}
-         </span>
- 
-         <img
-                  src=${newsData[i].img}
-                  class="object-cover w-[95%] h-[35vh] rounded-xl block"
-                  alt=""
-                  />
-                  <p class="text-3xl text-[#1A265C] p-2">
-                  ${newsData[i].header}
-                  </p>
-                  </div>
-                  `;
+      <div class="swiper-slide relative">
+      <span
+        class="absolute top-0 left-0 text-base leading-4 bg-[#e4e7f3] opacity-90 text-[#617EFF] font-normal p-1 rounded m-3"
+      >
+        <i class="fa-solid fa-calendar p-1 mr-"></i>
+        ${newsData[i].date}
+      </span>
+    
+      <img
+        src="${newsData[i].img}"
+        class="object-cover w-full rounded-xl block"
+        alt=""
+      />
+      <p class="text-3xl text-[#1A265C] p-2">${newsData[i].header}</p>
+    </div>
+    `;
   }
   wrapper.insertAdjacentHTML("beforeend", newsHTML);
 }

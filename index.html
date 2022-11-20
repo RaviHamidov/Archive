@@ -64,7 +64,7 @@
       <!-- ########## header__hero ########## -->
       <div
         id="carouselExampleCaptions"
-        class="w-full carousel slide relative z-0 flex justify-center bg-center bg-no-repeat bg-cover"
+        class="w-full carousel slide relative z-200 flex justify-center bg-center bg-no-repeat bg-cover"
         data-bs-ride="false"
       >
         <!-- ########## header__hero--nav ########## -->
@@ -111,7 +111,10 @@
             <!-- part-end -->
 
             <!-- nav-bar -->
-            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <div
+              class="hidden container md:block md:w-auto p-0"
+              id="navbar-dropdown"
+            >
               <!-- nav-bar-top -->
               <ul
                 class="flex flex-col m-0 px-2 py-2 justify-end rounded-lg md:flex-row md:space-x-8 md:text-sm md:font-medium"
@@ -153,6 +156,10 @@
                 </li>
               </ul>
               <!-- part-end -->
+
+              <div
+                class="md:hidden h-[2px] w-9/12 mx-auto bg-[#A4AFE5] opacity-40 mb-2"
+              ></div>
 
               <!-- nav-bar-menu -->
               <ul
@@ -716,7 +723,7 @@
 
         <!-- carousel-control-prev -->
         <button
-          class="carousel-control-prev"
+          class="carousel-control-prev max-md:hidden"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
@@ -731,7 +738,7 @@
 
         <!-- carousel-control-next -->
         <button
-          class="carousel-control-next"
+          class="carousel-control-next max-md:hidden"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"
@@ -756,11 +763,13 @@
         class="w-full h-full bg-no-repeat bg-cover absolute z-[-10]"
       />
       <section class="py-32 flex justify-center flex-col items-center">
-        <h2 class="text-5xl font-semibold leading-9 text-[#1E2782]">
+        <h2
+          class="text-3xl text-center sm:text-5xl font-semibold leading-9 text-[#1E2782]"
+        >
           Universitetdən daha artığı!
         </h2>
         <p
-          class="w-6/12 text-center text-2xl font-normal leading-8 text-[#3046A8] mt-5"
+          class="w-12/12 sm:w-8/12 md:6/12 text-center text-lg md:text-lg font-normal leading-8 text-[#3046A8] mt-5"
         >
           Tələbələrimiz, fakültələrimiz və işçi heyətimiz həyatın hər sahəsini,
           bir-birindən fərqli düşüncələri, ölkəmizin və dünyanın müxtəlif
@@ -769,7 +778,7 @@
           tanış olmaqdır.
         </p>
         <video
-          class="w-6/12 border-[2rem] border-white border-solid rounded-3xl mt-4"
+          class="w-12/12 sm:w-8/12 md:6/12 border-[0.5rem] sm:border-[1rem] border-white border-solid rounded-3xl mt-4"
           controls
         >
           <source src="./src/tools/videos/ADNSU.mp4" type="video/mp4" />
@@ -780,28 +789,28 @@
       <!-- Murad's part starts -->
 
       <div
-        class="bg-[#9BA3EB] flex justify-between w-[40%] m-auto rounded-3xl mt-16 mb-12"
+        class="w-5/12 mx-auto bg-[#DFE3F6] flex justify-between rounded-3xl mt-16 mb-12"
       >
         <h2
-          class="text-[#3E5BDB] text-2xl font-semibold w-[50%] m-4 p-4 rounded-xl opacity-80"
+          class="text-[#3E5BDB] text-2xl font-normal m-3 py-3 px-6 leading-6 rounded-xl opacity-80"
           id="h11"
         >
           Ən son xəbərlər
         </h2>
         <h2
-          class="text-[#3E5BDB] text-2xl font-semibold w-[50%] m-4 p-4 rounded-xl opacity-80"
+          class="text-[#3E5BDB] text-2xl font-normal m-3 py-3 px-6 leading-6 rounded-xl opacity-80"
           id="h12"
         >
           Ən son elanlar
         </h2>
       </div>
 
-      <div class="swiper mySwiper w-[90%] p-4 m-auto mt-16 mb-16">
+      <div class="container swiper mySwiper mx-auto mt-16 mb-16">
         <div class="swiper-wrapper m-auto news-announces">
           <!-- filled in JavaScript -->
         </div>
-        <div class="swiper-button-next btn"></div>
-        <div class="swiper-button-prev btn"></div>
+        <div class="swiper-button-next btn bg-transparent"></div>
+        <div class="swiper-button-prev btn bg-transparent"></div>
       </div>
 
       <!-- Swiper JS -->
