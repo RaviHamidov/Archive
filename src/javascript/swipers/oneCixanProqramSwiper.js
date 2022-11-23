@@ -14,25 +14,25 @@ var swiper = new Swiper(".one-cixan-proqramlar-swiper", {
 
 const proqramlarData = [
   {
-    src: "./images/proqramlar/azii_it_club_logo.png",
+    src: "../../../src/tools/images/svg/programs__01.svg",
     title: "Azii IT Club",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
   },
   {
-    src: "./images/proqramlar/mezun_karyera_merkezi_logo.png",
+    src: "../../../src/tools/images/svg/programs__02.svg",
     title: "Məzun Karyera Mərkəzi",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
   },
   {
-    src: "./images/proqramlar/eazi_start_logo.png",
+    src: "../../../src/tools/images/svg/programs__03.svg",
     title: "Eazi Start",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
   },
   {
-    src: "./images/proqramlar/sabah_logo.png",
+    src: "../../../src/tools/images/svg/programs__04.svg",
     title: "Sabah Qrupları",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",

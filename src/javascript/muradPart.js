@@ -137,21 +137,26 @@ function showAnnounces() {
     announceHTML =
       announceHTML +
       `
-      <div class="swiper-slide relative">
-      <span
-        class="absolute top-0 left-0 text-base leading-4 bg-[#e4e7f3] opacity-90 text-[#617EFF] font-normal p-1 rounded m-3"
-      >
-        <i class="fa-solid fa-calendar p-1 mr-"></i>
-        ${announceData[i].date}
-      </span>
-    
-      <img
-        src="${announceData[i].img}"
-        class="object-cover w-full rounded-xl block"
-        alt=""
-      />
-      <p class="text-3xl text-[#1A265C] p-2">${announceData[i].header}</p>
-    </div>
+      <div class="swiper-slide relative w-12/12 sm:w-6/12 md:3/12">
+        <span
+          class="absolute top-0 left-0 text-base leading-4 bg-[#e4e7f3] text-[#617EFF] font-font-light p-1 rounded m-3"
+        >
+          <i class="fa-solid fa-calendar p-1"></i>
+          ${announceData[i].date}
+        </span>
+
+        <img
+          src="${announceData[i].img}"
+          class="object-cover w-full rounded-xl block"
+          alt=""
+        />
+        <h3 class="text-[#3E5BDB] text-lg font-font-light leading-5 opacity-70">
+          BEYNƏLXALQ
+        </h3>
+        <p class="text-2xl font-font-light leading-6 text-[#1A265C] opacity-70">
+          ${announceData[i].header}
+        </p>
+      </div>
      `;
   }
   wrapper.insertAdjacentHTML("beforeend", announceHTML);
@@ -169,21 +174,26 @@ function showNews() {
     newsHTML =
       newsHTML +
       `
-      <div class="swiper-slide relative">
-      <span
-        class="absolute top-0 left-0 text-base leading-4 bg-[#e4e7f3] opacity-90 text-[#617EFF] font-normal p-1 rounded m-3"
-      >
-        <i class="fa-solid fa-calendar p-1 mr-"></i>
-        ${newsData[i].date}
-      </span>
+      <div class="swiper-slide relative w-12/12 sm:w-6/12 md:3/12">
+        <span
+          class="absolute top-0 left-0 text-base leading-4 bg-[#e4e7f3] text-[#617EFF] font-light p-1 rounded m-3"
+        >
+          <i class="fa-solid fa-calendar p-1"></i>
+          ${newsData[i].date}
+        </span>
     
-      <img
-        src="${newsData[i].img}"
-        class="object-cover w-full rounded-xl block"
-        alt=""
-      />
-      <p class="text-3xl text-[#1A265C] p-2">${newsData[i].header}</p>
-    </div>
+        <img
+          src="${newsData[i].img}"
+          class="object-cover w-full rounded-xl block"
+          alt=""
+        />
+        <h3 class="text-[#3E5BDB] text-lg font-light leading-5 opacity-70">
+          BEYNƏLXALQ
+        </h3>
+        <p class="text-2xl font-light leading-6 text-[#1A265C] opacity-70">
+          ${newsData[i].header}
+        </p>
+      </div>
     `;
   }
   wrapper.insertAdjacentHTML("beforeend", newsHTML);

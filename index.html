@@ -806,7 +806,27 @@
       </div>
 
       <div class="container swiper mySwiper mx-auto mt-16 mb-16">
-        <div class="swiper-wrapper m-auto news-announces">
+        <div class="swiper-wrapper container m-auto news-announces">
+          <div class="swiper-slide relative w-12/12 sm:w-6/12 md:3/12">
+            <span
+              class="absolute top-0 left-0 text-base leading-4 bg-[#e4e7f3] text-[#617EFF] font-light p-1 rounded m-3 opacity-60"
+            >
+              <i class="fa-solid fa-calendar p-1 mr-"></i>
+              ${newsData[i].date}
+            </span>
+
+            <img
+              src="${newsData[i].img}"
+              class="object-cover w-full rounded-xl block"
+              alt=""
+            />
+            <h3 class="text-[#3E5BDB] text-lg font-light leading-5 opacity-60">
+              BEYNƏLXALQ
+            </h3>
+            <p class="text-2xl font-light leading-6 text-[#1A265C] opacity-60">
+              ${newsData[i].header}
+            </p>
+          </div>
           <!-- filled in JavaScript -->
         </div>
         <div class="swiper-button-next btn bg-transparent"></div>
@@ -938,58 +958,82 @@
 
       <!-- Murad's part ends -->
 
-      <!-- Gusein's part -->
       <section class="fakulteler">
-        <h2 class="text-6xl font-semibold leading-9 mx-24 my-6">Fakültələr</h2>
-        <div class="swiper w-full h-1/2 fakultelerSwiper px-40 pb-9">
-          <div class="swiper-wrapper fakulteler-wrapper"></div>
+        <h2 class="text-6xl font-semibold leading-9 mx-6 md:mx-24 my-6">
+          Fakültələr
+        </h2>
+        <div class="swiper w-full h-1/2 fakultelerSwiper px-6 md:px-40 pb-9">
+          <div
+            class="w-full swiper-wrapper fakulteler-wrapper md:flex flex-row md:flex-col md:gap-3"
+          ></div>
+          <button
+            class="fakultelerLoadMore block md:hidden mx-auto bg-sky-200 text-3xl p-8 rounded-3xl hover:opacity-60 transition-all duration-500"
+          >
+            Daha çox yüklə
+          </button>
         </div>
       </section>
 
       <section class="mezunlarin-fikirleri mt-12">
-        <h2 class="text-6xl font-semibold leading-9 mx-24 my-6">
+        <h2
+          class="text-5xl md:text-6xl font-semibold leading-9 mx-6 md:mx-24 my-6"
+        >
           Məzunların fikirləri
         </h2>
-        <div class="swiper mezunFikirleriSwiper mx-24">
+        <div class="swiper mezunFikirleriSwiper mx-6 md:mx-24">
           <div class="swiper-wrapper mezun-fikir-wrapper"></div>
           <div
-            class="swiper-button-next rounded-full w-32 h-32 hover:bg-white hover:shadow-xl transition-all duration-500"
+            class="hidden md:flex swiper-button-next rounded-full w-32 h-32 hover:bg-white hover:shadow-xl transition-all duration-500"
           ></div>
           <div
-            class="swiper-button-prev rounded-full w-32 h-32 hover:bg-white hover:shadow-xl transition-all duration-500"
+            class="hidden md:flex swiper-button-prev rounded-full w-32 h-32 hover:bg-white hover:shadow-xl transition-all duration-500"
           ></div>
         </div>
       </section>
 
       <section class="one-cixan-proqramlar my-12">
-        <h2 class="text-6xl font-semibold leading-9 mx-24 my-6">
+        <h2
+          class="text-5xl md:text-6xl font-semibold leading-9 mx-6 md:mx-24 my-6"
+        >
           Önə çıxan proqramlar
         </h2>
-        <div class="swiper w-full h-1/2 one-cixan-proqramlar-swiper px-40 pb-9">
-          <div class="swiper-wrapper one-cixan-proqramlar-wrapper"></div>
+        <div
+          class="swiper w-full h-1/2 one-cixan-proqramlar-swiper px-9 md:px-40 pb-9"
+        >
+          <div
+            class="swiper-wrapper one-cixan-proqramlar-wrapper w-full md:flex flex-row md:flex-col md:gap-3"
+          ></div>
+          <button
+            class="proqramlarLoadMore block md:hidden mx-auto bg-sky-200 text-3xl p-8 rounded-3xl hover:opacity-60 transition-all duration-500"
+          >
+            Daha çox yüklə
+          </button>
         </div>
       </section>
       <!-- Gusein's part end -->
+
       <!--Nihad's part start-->
-      <div class="logo-N px-36">
-        <div class="swiper muellimler mb-20">
-          <h2 class="text-6xl text-[#1A265C] font-bold mb-8">
+      <div class="logo-N px-3 md:px-36">
+        <div class="swiper muellimler md:mb-20">
+          <h2 class="text-6xl text-[#1A265C] font-bold mb-8 mx-6 md:mx-24">
             Məşhur müəllimlərimiz
           </h2>
           <div class="swiper-wrapper bg-inherit py-12">
             <div
-              class="swiper-slide swiperTeachers flex items-center bg-inherit px-6 box-border"
+              class="swiper-slide swiperTeachers flex items-center flex-col md:flex-row bg-inherit p-0 md:px-6 box-border"
             >
               <div
-                style="background-image: url('./images/muellim2.png')"
-                class="shadow-lg shadow-[#888] bg-[url('assets/images/muellim2.png')] rounded-4xl muellimler-img shrink-0 mr-32 bg-cover bg-no-repeat bg-center ml-12"
+                style="
+                  background-image: url('./src/tools/images/png/graduate__01.png');
+                "
+                class="w-full h-96 md:w-2/5 shadow-lg shadow-[#888] rounded-4xl muellimler-img shrink-0 md:mr-32 bg-cover bg-no-repeat bg-center md:ml-12"
               ></div>
               <div>
-                <p class="text-[#1A265C] text-5xl mb-12 mr-12">
+                <p class="text-[#1A265C] text-center text-5xl mb-12 mr-12">
                   Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim
                   üçün bu universitet həyatımın ən doğru seçimi idi.
                 </p>
-                <div class="mr-12">
+                <div class="mr-12 text-center">
                   <h3 class="text-[#617EFF] text-4xl font-bold">
                     Filankəs Filankəsov,
                   </h3>
@@ -1000,18 +1044,20 @@
               </div>
             </div>
             <div
-              class="swiper-slide swiperTeachers flex items-center bg-inherit px-6 box-border"
+              class="swiper-slide swiperTeachers flex items-center flex-col md:flex-row bg-inherit p-0 md:px-6 box-border"
             >
               <div
-                style="background-image: url('./images/muellim2.png')"
-                class="shadow-lg shadow-[#888] bg-[url('assets/images/muellim2.png')] rounded-4xl muellimler-img shrink-0 mr-32 bg-cover bg-no-repeat bg-center ml-12"
+                style="
+                  background-image: url('./src/tools/images/png/graduate__02.png');
+                "
+                class="w-full h-96 md:w-2/5 shadow-lg shadow-[#888] rounded-4xl muellimler-img shrink-0 md:mr-32 bg-cover bg-no-repeat bg-center md:ml-12"
               ></div>
               <div>
-                <p class="text-[#1A265C] text-5xl mb-12 mr-12">
+                <p class="text-[#1A265C] text-center text-5xl mb-12 mr-12">
                   Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim
                   üçün bu universitet həyatımın ən doğru seçimi idi.
                 </p>
-                <div class="mr-12">
+                <div class="mr-12 text-center">
                   <h3 class="text-[#617EFF] text-4xl font-bold">
                     Filankəs Filankəsov,
                   </h3>
@@ -1022,18 +1068,20 @@
               </div>
             </div>
             <div
-              class="swiper-slide swiperTeachers flex items-center bg-inherit px-6 box-border"
+              class="swiper-slide swiperTeachers flex items-center flex-col md:flex-row bg-inherit p-0 md:px-6 box-border"
             >
               <div
-                style="background-image: url('./images/muellim2.png')"
-                class="shadow-lg shadow-[#888] bg-[url('assets/images/muellim2.png')] rounded-4xl muellimler-img shrink-0 mr-32 bg-cover bg-no-repeat bg-center ml-12"
+                style="
+                  background-image: url('./src/tools/images/png/graduate__03.png');
+                "
+                class="w-full h-96 md:w-2/5 shadow-lg shadow-[#888] rounded-4xl muellimler-img shrink-0 md:mr-32 bg-cover bg-no-repeat bg-center md:ml-12"
               ></div>
               <div>
-                <p class="text-[#1A265C] text-5xl mb-12 mr-12">
+                <p class="text-[#1A265C] text-center text-5xl mb-12 mr-12">
                   Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim
                   üçün bu universitet həyatımın ən doğru seçimi idi.
                 </p>
-                <div class="mr-12">
+                <div class="mr-12 text-center">
                   <h3 class="text-[#617EFF] text-4xl font-bold">
                     Filankəs Filankəsov,
                   </h3>
@@ -1045,15 +1093,13 @@
             </div>
           </div>
           <div
-            class="swiper-button-next rounded-full bg-inherit hover:bg-white w-24 h-24 hover:shadow-md ease-in duration-300 transition-all hover:shadow-[#888]"
+            class="swiper-button-next md:flex hidden rounded-full bg-inherit hover:bg-white w-24 h-24 hover:shadow-md ease-in duration-300 transition-all hover:shadow-[#888]"
           ></div>
           <div
-            class="swiper-button-prev rounded-full bg-inherit hover:bg-white w-24 h-24 hover:shadow-md ease-in duration-300 transition-all hover:shadow-[#888]"
+            class="swiper-button-prev md:flex hidden rounded-full bg-inherit hover:bg-white w-24 h-24 hover:shadow-md ease-in duration-300 transition-all hover:shadow-[#888]"
           ></div>
+          <div class="swiper-pagination flex md:hidden justify-center"></div>
         </div>
-
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
         <!-- Initialize Swiper -->
         <script>
@@ -1061,6 +1107,10 @@
             navigation: {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
             },
             effect: "fade",
             fadeEffext: {
@@ -1071,71 +1121,76 @@
           });
         </script>
         <div class="swiper partnyorlar pb-52">
-          <h2 class="text-6xl text-[#1A265C] font-bold mb-20">
+          <h2 class="text-6xl text-[#1A265C] font-bold mb-20 mx-6 md:mx-24">
             Partnyorlarımız
           </h2>
           <div class="swiper-wrapper">
             <div
-              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
+              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-60 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
             >
               <div
-                class="h-full w-full bg-[url('./images/teknofest.svg')] bg-contain bg-no-repeat bg-center"
+                class="h-full w-full bg-[url('./src/tools/images/svg/partner__01.svg')] bg-contain bg-no-repeat bg-center"
               ></div>
             </div>
             <div
-              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
+              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-60 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
             >
               <div
-                class="h-full w-full bg-[url('./images/tehsilNazirliyi.svg')] bg-contain bg-no-repeat bg-center"
+                class="h-full w-full bg-[url('./src/tools/images/svg/partner__02.svg')] bg-contain bg-no-repeat bg-center"
               ></div>
             </div>
             <div
-              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
+              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-60 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
             >
               <div
-                class="h-full w-full bg-[url('./images/pashaBank.svg')] bg-contain bg-no-repeat bg-center"
+                class="h-full w-full bg-[url('./src/tools/images/svg/partner__03.svg')] bg-contain bg-no-repeat bg-center"
               ></div>
             </div>
 
             <!--
-   copy of codes for slider working properly
- -->
+  copy of codes for slider working properly
+-->
             <div
-              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
+              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-60 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
             >
               <div
-                class="h-full w-full bg-[url('./images/teknofest.svg')] bg-contain bg-no-repeat bg-center"
+                class="h-full w-full bg-[url('./src/tools/images/svg/partner__01.svg')] bg-contain bg-no-repeat bg-center"
               ></div>
             </div>
             <div
-              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
+              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-60 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
             >
               <div
-                class="h-full w-full bg-[url('./images/tehsilNazirliyi.svg')] bg-contain bg-no-repeat bg-center"
+                class="h-full w-full bg-[url('./src/tools/images/svg/partner__02.svg')] bg-contain bg-no-repeat bg-center"
               ></div>
             </div>
             <div
-              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-50 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
+              class="swiper-slide hover:shadow-lg hover:shadow-[#888] bg-inherit hover:bg-white px-8 opacity-60 hover:opacity-100 ease-in duration-300 transition-all rounded-4xl h-80 w-96"
             >
               <div
-                class="h-full w-full bg-[url('./images/pashaBank.svg')] bg-contain bg-no-repeat bg-center"
+                class="h-full w-full bg-[url('./src/tools/images/svg/partner__03.svg')] bg-contain bg-no-repeat bg-center"
               ></div>
             </div>
           </div>
         </div>
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
         <!-- Initialize Swiper -->
         <script>
-          var swiper = new Swiper(".partnyorlar", {
-            loop: true,
-            slidesPerView: 4,
-            spaceBetween: 20,
-            updateOnWindowResize: true,
-            mousewheel: true,
-          });
+          if (window.screen.width < 768) {
+            var swiper = new Swiper(".partnyorlar", {
+              loop: true,
+              slidesPerView: 2,
+              spaceBetween: 20,
+              updateOnWindowResize: true,
+            });
+          } else {
+            var swiper = new Swiper(".partnyorlar", {
+              loop: true,
+              slidesPerView: 4,
+              spaceBetween: 20,
+              updateOnWindowResize: true,
+            });
+          }
           swiper.loopFix();
         </script>
       </div>

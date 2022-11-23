@@ -2,21 +2,21 @@ const mezunFikirleriWrapper = document.querySelector(".mezun-fikir-wrapper");
 
 const mezunFikirData = [
   {
-    scr: "./images/mezun-fikirleri/mezun_bombe.png",
+    src: "../../../src/tools/images/png/graduate__01.png",
     description:
       "Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim üçün bu universitet həyatımın ən doğru seçimi idi.",
     fullName: "Filankes Filankesov",
     work: "Filan şirkətdə Mühəndis",
   },
   {
-    scr: "./images/mezun-fikirleri/mezun_bombe.png",
+    src: "../../../src/tools/images/png/graduate__02.png",
     description:
       "Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim üçün bu universitet həyatımın ən doğru seçimi idi.",
     fullName: "Filankes Filankesov",
     work: "Filan şirkətdə Mühəndis",
   },
   {
-    scr: "./images/mezun-fikirleri/mezun_bombe.png",
+    src: "../../../src/tools/images/png/graduate__03.png",
     description:
       "Mənim üçün bu universitet həyatımın ən doğru seçimi idi. Mənim üçün bu universitet həyatımın ən doğru seçimi idi.",
     fullName: "Filankes Filankesov",
@@ -27,7 +27,7 @@ const mezunFikirData = [
 mezunFikirData.forEach((data) => {
   mezunFikirleriWrapper.innerHTML += `
         <div class="swiper-slide flex p-9">
-          <img class="w-2/4" src="${data.scr}" alt="bombee">
+          <img class="w-2/4" src="${data.src}" alt="bombee">
           <div class="w-2/4 flex flex-col justify-center px-6">       
             <p class="text-6xl">
                 ${data.description}

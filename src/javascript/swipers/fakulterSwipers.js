@@ -12,43 +12,43 @@ var swiper = new Swiper(".fakultelerSwiper", {
 
 const fakultelerData = [
   {
-    src: "./images/fakulteler/geoloji_kesfiyyat_logo.png",
+    src: "../../../src/tools/images/svg/faculty__01.svg",
     title: "Geoloji Kəşfiyyat",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
   },
   {
-    src: "./images/fakulteler/qaz_neft_meden_logo.png",
+    src: "../../../src/tools/images/svg/faculty__02.svg",
     title: "Qaz-Neft-Mədən",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
   },
   {
-    src: "./images/fakulteler/kimya_texno_logo.png",
+    src: "../../../src/tools/images/svg/faculty__03.svg",
     title: "Kimya-Texnologiya",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
   },
   {
-    src: "./images/fakulteler/neft_mexanika_logo.png",
+    src: "../../../src/tools/images/svg/faculty__04.svg",
     title: "Neft-Mexanika",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
   },
   {
-    src: "./images/fakulteler/energetika_logo.png",
+    src: "../../../src/tools/images/svg/faculty__05.svg",
     title: "Energetika",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
   },
   {
-    src: "./images/fakulteler/it_idareetme_logo.png",
+    src: "../../../src/tools/images/svg/faculty__05.svg",
     title: "İT və idarəetmə",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
   },
   {
-    src: "./images/fakulteler/iqtisadiyyat_menecement_logo.png",
+    src: "../../../src/tools/images/svg/faculty__06.svg",
     title: "İqtisadiyyat və menecment",
     description:
       "Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı filan şeylər edilir.",
