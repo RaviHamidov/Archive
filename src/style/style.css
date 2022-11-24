@@ -1,3 +1,85 @@
+/* Effect for Video - from Ravi's */
+video:focus {
+  outline: none;
+}
+/* Section End */
+
+.stickyNavBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100000000000000000000;
+}
+
+.sticky .mainSticky li button {
+  color: #1a265c !important;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+}
+
+.sticky .topSticky li a {
+  color: #617eff !important;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+}
+
+.sticky .topSticky li a {
+  color: #617eff !important;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+}
+
+.sticky div nav {
+  background: #fff !important;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+}
+
+.sticky div nav div a img {
+  display: none;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+}
+
+#stickyLogo {
+  height: 3.5rem;
+  width: 216px;
+  margin: 0 0.75rem 0 0;
+}
+
+.defaultLogo {
+  background: url("../tools/images/svg/logo__02.svg") no-repeat;
+}
+
+.scrollLogo {
+  background: url("../tools/images/svg/logo__01.svg") no-repeat !important;
+}
+
+@media only screen and (min-width: 640px) {
+  #stickyLogo {
+    height: 4.5rem;
+  }
+}
+
+/* Section End */
+
+/* Text Selection Effect - from Ravi's */
 ::-moz-selection {
   /* Code for Firefox */
   color: #3e5bdb;
@@ -8,164 +90,17 @@
   color: #3e5bdb;
   background: #dfe3f6;
 }
-/* Nihad's Part CSS start */
-/* .footer {
-  background-color: #dfe3f6;
-  font-size: 1.6rem;
-}
-
-.sm:hover > svg path {
-  fill: white;
-
-  transition: all ease 0.3s;
-}
-
-svg path {
-  transition: all ease 0.3s;
-}
-
-.sm:hover {
-  background-color: #617eff;
-  transition: all ease 0.5s;
-}
-
-.sm {
-  transition: all ease 0.5s;
-}
-
-.footer__a {
-  color: #3e5bdb;
-  font-size: 1.6rem;
-  transition: all ease 0.3s;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -ms-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-}
-
-.footer__a:hover {
-  color: #1a265c;
-  transition: all ease 0.3s;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -ms-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-}
-
-.footer__div2 {
-  border-top: 1px solid #9ba3eb;
-}
-
-
-.footer__logo h2 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #3e5bdb;
-  margin-top: 1.2rem;
-  transition: all ease 0.3s;
-}
-
-.footer__logo {
-  width: 230px;
-}
-.footer__logo:hover h2 {
-  color: #1a265c;
-  transition: all ease 0.3s;
-}
-.footer__div1 > div {
-  margin-right: 8vw;
-}
-
-/*swiper*/
-.logo-N {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #f3f5fc;
-
-  background-position: center;
-  background-image: url("/assets/images/AdnsuLogo-N.svg");
-}
-.nihad {
-  background-position: center calc(100% - 20px) center calc(100% - 20px) !important;
-}
-.rounded-4xl {
-  border-radius: 2rem;
-}
-.swiperTeachers {
-  visibility: hidden;
-  transition: all ease-in 0.5s;
-}
-.swiperTeachers.swipperActive {
-  visibility: visible;
-  transition: all ease-in 0.5s;
-}
-.muellimler-img {
-  height: 34rem;
-  width: 50.3rem;
-}
-*/
-/* Section End */
-
-/* Murad's Part CSS start */
-.active {
-  opacity: 1 !important;
-  transition: all ease-in-out 0.7s !important;
-  background-color: #ffff !important;
-  -webkit-transition: all ease-in-out 0.7s !important;
-  -moz-transition: all ease-in-out 0.7s !important;
-  -ms-transition: all ease-in-out 0.7s !important;
-  -o-transition: all ease-in-out 0.7s !important;
-}
-
-#academic {
-  background-image: url("https://918198.smushcdn.com/2281138/wp-content/uploads/2021/04/Graduates-1280x640.jpg?lossy=1&strip=1&webp=1");
-}
-
-.btn {
-  background-color: #fff;
-  opacity: 0.5;
-  padding: 30px;
-}
-
-.parallax {
-  background-size: cover;
-  background-position: center;
-  height: 48vh;
-}
-
-/* .swiper {
-      width: 80%;
-      height: 60%;
-      padding: 6em;
-    } */
-/* .swiper-slide {
-      font-size: 18px;
-      margin: 10px;
-      background: #fff;
-    } */
-/* .swiper-slide img {
-    display: block;
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  } */
-
-/* Section End */
+/* Section End - from Ravi's */
 
 /* BootStrap carousel indicators feature - from Ravi's */
-
 @media only screen and (max-width: 768px) {
   .r-maximum {
     width: 100%;
   }
 }
-
 /* Section End */
 
 /* BootStrap carousel indicators feature - from Ravi's */
-
 .carousel-indicators button {
   width: 10px !important;
   height: 10px !important;
@@ -191,5 +126,4 @@ svg path {
   -ms-transition: all ease 1s;
   -o-transition: all ease 1s;
 }
-
 /* Section End */

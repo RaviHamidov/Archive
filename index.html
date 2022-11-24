@@ -82,484 +82,497 @@
         data-bs-ride="false"
       >
         <!-- ########## header__hero--nav ########## -->
-        <nav
-          class="px-2 py-2 sm:py-0 bg-white container-fluid mx-auto flex justify-between items-center absolute z-10"
-        >
-          <div
-            class="container flex flex-wrap items-center justify-between mx-auto"
+        <div class="stickyNavBarDefault">
+          <nav
+            class="px-2 py-2 sm:py-0 container-fluid mx-auto flex justify-between items-center absolute z-10"
           >
-            <!-- nav-logo -->
-            <a href="#" class="flex items-center">
-              <img
-                src="./src/tools/images/png/logo__02.png"
-                class="h-6 mr-3 sm:h-10"
-                alt="AsoiuLogoDefault"
-              />
-              <!-- <img src="#" alt="AsoiuLogoScroll" /> -->
-            </a>
-            <!-- part-end -->
-
-            <!-- nav-mobile-btn -->
-            <button
-              data-collapse-toggle="navbar-dropdown"
-              type="button"
-              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 md:bg-transparent md:bg-none focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-dropdown"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-            <!-- part-end -->
-
-            <!-- nav-bar -->
             <div
-              class="hidden container md:block md:w-auto p-0"
-              id="navbar-dropdown"
+              class="container flex flex-wrap items-center justify-between mx-auto"
             >
-              <!-- nav-bar-top -->
-              <ul
-                class="flex flex-col m-0 px-2 py-2 justify-end rounded-lg md:flex-row md:space-x-8 md:text-sm md:font-medium"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#617EFF] font-normal text-lg rounded-lg"
-                    >Haqqımızda</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#617EFF] font-normal text-lg rounded-lg"
-                    >Müəllimlər</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#617EFF] font-normal text-lg rounded-lg"
-                    >Ən çox verilən suallar</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#617EFF] font-normal text-lg rounded-lg"
-                    >Təklifim var</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#617EFF] font-normal text-lg leading-6 rounded"
-                    >Əlaqə</a
-                  >
-                </li>
-              </ul>
+              <!-- nav-logo -->
+              <a href="#" class="flex items-center">
+                <div id="stickyLogo" class="defaultLogo"></div>
+                <script type="text/javascript">
+                  window.addEventListener("scroll", function () {
+                    var scrollLogo = document.querySelector("#stickyLogo");
+                    scrollLogo.classList.toggle(
+                      "scrollLogo",
+                      window.scrollY > 0
+                    );
+                  });
+                </script>
+              </a>
               <!-- part-end -->
 
-              <div
-                class="md:hidden h-[2px] w-9/12 mx-auto bg-[#A4AFE5] opacity-40 mb-2"
-              ></div>
-
-              <!-- nav-bar-menu -->
-              <ul
-                class="flex flex-col p-2 m-0 justify-end rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+              <!-- nav-mobile-btn -->
+              <button
+                data-collapse-toggle="navbar-dropdown"
+                type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 md:bg-transparent md:bg-none focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-dropdown"
+                aria-expanded="false"
               >
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="newsDropdown"
-                    style="color: #1a265c"
-                    class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
-                  >
-                    Xəbərlər
-                    <svg
-                      class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="newsDropdown"
-                    class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
-                  >
-                    <ul
-                      class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >ADNSU Xəbərləri</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Elanlar</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="facultyDropdown"
-                    style="color: #1a265c"
-                    class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
-                  >
-                    Fakültələr
-                    <svg
-                      class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="facultyDropdown"
-                    class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
-                  >
-                    <ul
-                      class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >İnformasiya Texnologiyaları və İdarəetmə (İTİF)</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Qaz-Neft-Mədən</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Kimya-Texnlogiya</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Neft-Mexanika</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Energetika</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Geoloji Kəşfiyyat</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >İqtisadiyyat və Menecment</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="programsDropdown"
-                    style="color: #1a265c"
-                    class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
-                  >
-                    Proqramlar
-                    <svg
-                      class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="programsDropdown"
-                    class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
-                  >
-                    <ul
-                      class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >BA proqramlar</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Yay məktəbi</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >SABAH Qrupları</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >eazi Start</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >AziiEduLab</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="aboutStudentsDropdown"
-                    style="color: #1a265c"
-                    class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
-                  >
-                    Tələbələrlə bağlı
-                    <svg
-                      class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="aboutStudentsDropdown"
-                    class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
-                  >
-                    <ul
-                      class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Tələbələrimiz</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Bakalavr</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Magistratura</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Doktorantura</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="servicesDropdown"
-                    style="color: #1a265c"
-                    class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
-                  >
-                    Xidmətlər
-                    <svg
-                      class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="servicesDropdown"
-                    class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
-                  >
-                    <ul
-                      class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Tələbələr üçün</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Heyət üçün</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Akt zalı</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Yataqxana</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          style="color: #1a265c"
-                          class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
-                          >Kitabxana</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <!-- nav-search-btn -->
-                <li
-                  style="margin-left: 0"
-                  class="rounded py-2 p-3 mb-2 hidden md:flex md:items-center md:justify-center"
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-6 h-6"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-7 h-7 cursor-pointer"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                    />
-                  </svg>
-                </li>
-                <!-- part-end -->
-              </ul>
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
               <!-- part-end -->
+
+              <!-- nav-bar -->
+              <div
+                class="hidden container md:block md:w-auto p-0"
+                id="navbar-dropdown"
+              >
+                <!-- nav-bar-top -->
+                <ul
+                  class="topSticky flex flex-col m-0 px-2 py-2 justify-end rounded-lg md:flex-row md:space-x-8 md:text-sm md:font-medium"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#FFF] font-normal text-lg rounded-lg"
+                      >Haqqımızda</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#FFF] font-normal text-lg rounded-lg"
+                      >Müəllimlər</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#FFF] font-normal text-lg rounded-lg"
+                      >Ən çox verilən suallar</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#FFF] font-normal text-lg rounded-lg"
+                      >Təklifim var</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-decoration-none block p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent text-[#FFF] font-normal text-lg leading-6 rounded"
+                      >Əlaqə</a
+                    >
+                  </li>
+                </ul>
+                <!-- part-end -->
+
+                <div
+                  class="md:hidden h-[2px] w-9/12 mx-auto bg-[#A4AFE5] opacity-40 mb-2"
+                ></div>
+
+                <!-- nav-bar-menu -->
+                <ul
+                  class="mainSticky flex flex-col p-2 m-0 justify-end rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+                >
+                  <li>
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="newsDropdown"
+                      style="color: #fff"
+                      class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
+                    >
+                      Xəbərlər
+                      <svg
+                        class="w-5 h-5 ml-1"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="newsDropdown"
+                      class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                    >
+                      <ul
+                        class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >ADNSU Xəbərləri</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Elanlar</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="facultyDropdown"
+                      style="color: #fff"
+                      class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
+                    >
+                      Fakültələr
+                      <svg
+                        class="w-5 h-5 ml-1"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="facultyDropdown"
+                      class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                    >
+                      <ul
+                        class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >İnformasiya Texnologiyaları və İdarəetmə (İTİF)</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Qaz-Neft-Mədən</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Kimya-Texnlogiya</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Neft-Mexanika</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Energetika</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Geoloji Kəşfiyyat</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >İqtisadiyyat və Menecment</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="programsDropdown"
+                      style="color: #fff"
+                      class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
+                    >
+                      Proqramlar
+                      <svg
+                        class="w-5 h-5 ml-1"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="programsDropdown"
+                      class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                    >
+                      <ul
+                        class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >BA proqramlar</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Yay məktəbi</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >SABAH Qrupları</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >eazi Start</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >AziiEduLab</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="aboutStudentsDropdown"
+                      style="color: #fff"
+                      class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
+                    >
+                      Tələbələrlə bağlı
+                      <svg
+                        class="w-5 h-5 ml-1"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="aboutStudentsDropdown"
+                      class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                    >
+                      <ul
+                        class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Tələbələrimiz</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Bakalavr</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Magistratura</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Doktorantura</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="servicesDropdown"
+                      style="color: #fff"
+                      class="flex items-center justify-between w-full p-2 pl-1 pr-2 mb-2 sm:mb-0 bg-gray-100 md:bg-transparent font-medium text-2xl leading-7 rounded hover:bg-gray-100 md:p-0 md:w-auto"
+                    >
+                      Xidmətlər
+                      <svg
+                        class="w-5 h-5 ml-1"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="servicesDropdown"
+                      class="r-maximum z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                    >
+                      <ul
+                        class="pl-0 py-1 text-sm text-gray-700 dark:text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Tələbələr üçün</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Heyət üçün</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Akt zalı</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Yataqxana</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            style="color: #1a265c"
+                            class="block px-4 py-2 text-lg font-normal leading-6 no-underline hover:bg-gray-100 md:bg-transparent"
+                            >Kitabxana</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!-- nav-search-btn -->
+                  <li
+                    style="margin-left: 0"
+                    class="rounded py-2 p-3 mb-2 hidden md:flex md:items-center md:justify-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-7 h-7 cursor-pointer"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                      />
+                    </svg>
+                  </li>
+                  <!-- part-end -->
+                </ul>
+                <!-- part-end -->
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+          <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+              var stickyNavBar = document.querySelector(".stickyNavBarDefault");
+              stickyNavBar.classList.toggle("stickyNavBar", window.scrollY > 0);
+            });
+          </script>
+        </div>
+
         <!-- ########## section__end ########## -->
 
         <!-- carousel-indicators -->
@@ -767,11 +780,18 @@
       </div>
       <!-- ########## section__end ########## -->
     </header>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
     <!-- ########## section__end ########## -->
 
     <!-- ########## main ########## -->
 
     <main class="relative">
+      <!-- Background for MainPart -->
       <img
         src="./src/tools/images/png/bg__01.png"
         alt="Your browser don't support this image"
@@ -793,13 +813,87 @@
           gözəl tərəflərindən biri təhsil almaq, işləmək, əylənmək, yeniliklərlə
           tanış olmaqdır.
         </p>
-        <video
+
+        <div class="featureImg relative overflow-hidden">
+          <img
+            class="border-[0.5rem] sm:border-[1rem] border-white border-solid rounded-3xl mt-4"
+            src="./src/tools/images/png/bg__02.png"
+            alt=""
+          />
+          <div
+            style="
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <i
+              class="text-7xl text-white mr-3 fa-solid fa-circle-play play-btn"
+              onclick="playVideo('./src/tools/videos/ADNSU.mp4')"
+            ></i>
+            <span class="text-3xl font-medium leading-8 text-white"
+              >Virtual tur at</span
+            >
+          </div>
+          <div
+            class="videoPlayer"
+            id="videoPlayer"
+            style="
+              width: 100%;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              display: none;
+              z-index: 200;
+            "
+          >
+            <video width="100%" controls autoplay>
+              <source
+                src="./src/tools/videos/ADNSU.mp4"
+                type="video/mp4"
+                id="myVideo"
+              />
+              <i
+                style="
+                  z-index: 200;
+                  position: absolute;
+                  top: 0px;
+                  right: 0px;
+                  font-size: 50px;
+                "
+                class="fa-solid fa-circle-play closeBtn"
+                onclick="stopVideo()"
+              ></i>
+            </video>
+          </div>
+        </div>
+
+        <script>
+          var videoPlayer = document.getElementById("videoPlayer");
+          var myVideo = document.getElementById("myVideo");
+
+          function stopVideo() {
+            videoPlayer.style.display = "none ";
+          }
+          function playVideo(file) {
+            myVideo.src = file;
+
+            videoPlayer.style.display = "block";
+          }
+        </script>
+        <!-- <video
           class="w-12/12 sm:w-8/12 md:6/12 border-[0.5rem] sm:border-[1rem] border-white border-solid rounded-3xl mt-4"
           controls
         >
           <source src="./src/tools/videos/ADNSU.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> -->
       </section>
 
       <!-- Swiper JS -->
@@ -823,7 +917,7 @@
       <!-- ########## section_end ########## -->
 
       <!-- ########## news_section ########## -->
-      <div
+      <!-- <div
         class="w-5/12 mx-auto bg-[#DFE3F6] flex justify-between rounded-3xl mt-16 mb-12"
       >
         <h2
@@ -862,11 +956,10 @@
               ${newsData[i].header}
             </p>
           </div>
-          <!-- filled in JavaScript -->
         </div>
         <div class="swiper-button-next btn bg-transparent"></div>
         <div class="swiper-button-prev btn bg-transparent"></div>
-      </div>
+      </div> -->
       <!-- ########## section_end ########## -->
 
       <!-- ########## academy_section ########## -->
